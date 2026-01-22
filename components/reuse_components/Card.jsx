@@ -1,0 +1,27 @@
+export default function Card({
+  children,
+  className = "",
+  style = {},
+  darkMode = false,
+}) {
+  const gradientBg = darkMode
+    ? "linear-gradient(135deg, #111714 0%, #1a3a2a 50%, #0f2818 100%)"
+    : "linear-gradient(135deg, white 0%, #1a3a2a 50%, #0f2818 100%)";
+
+  return (
+    <div
+      style={{
+        background: gradientBg,
+        fontWeight: "bolder",
+        border: `1px solid ${darkMode ? "#2a4a3a" : "#d4e0db"}`,
+        boxShadow: darkMode
+          ? "0 4px 15px rgba(54, 226, 123, 0.15)"
+          : "0 4px 15px rgba(54, 226, 123, 0.1)",
+        ...style,
+      }}
+      className={`rounded-lg p-4 transition hover:shadow-lg ${className}`}
+    >
+      {children}
+    </div>
+  );
+}
