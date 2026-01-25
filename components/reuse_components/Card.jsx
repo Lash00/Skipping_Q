@@ -6,7 +6,7 @@ export default function Card({
 }) {
   const gradientBg = darkMode
     ? "linear-gradient(135deg, #111714 0%, #1a3a2a 50%, #0f2818 100%)"
-    : "linear-gradient(135deg, white 0%, #1a3a2a 50%, #0f2818 100%)";
+    : "linear-gradient(135deg,  #36e27b 0%, #1a3a2a 50%, #0f2818 100%)";
 
   return (
     <div
@@ -19,7 +19,7 @@ export default function Card({
           : "0 4px 15px rgba(54, 226, 123, 0.1)",
         ...style,
       }}
-      className={`rounded-lg p-4 transition hover:shadow-lg ${className}`}
+      className={`rounded-lg p-2 transition hover:shadow-lg ${className}`}
     >
       {children}
     </div>
