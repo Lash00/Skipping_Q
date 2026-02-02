@@ -1,0 +1,263 @@
+{
+  "roles": {
+    "superAdmin": {
+      "role_id": 1,
+      "role_name": "Super Admin",
+      "type_id": 1,
+      "permissions": {
+        "accounts": {
+          "create": true,
+          "read": true,
+          "update": true,
+          "delete": true
+        },
+        "users": {
+          "create": true,
+          "read": true,
+          "update": true,
+          "delete": true
+        },
+        "organizations": {
+          "create": true,
+          "read": true,
+          "update": true,
+          "delete": true
+        },
+        "branches": {
+          "create": true,
+          "read": true,
+          "update": true,
+          "delete": true
+        },
+        "atms": {
+          "create": true,
+          "read": true,
+          "update": true,
+          "delete": true
+        },
+        "cameras": {
+          "create": true,
+          "read": true,
+          "update": true,
+          "delete": true
+        },
+        "services": {
+          "create": true,
+          "read": true,
+          "update": true,
+          "delete": true
+        },
+        "reports": {
+          "view_all": true,
+          "export": true
+        },
+        "system": {
+          "manage_roles": true,
+          "manage_settings": true,
+          "view_logs": true
+        }
+      },
+      "dashboard_route": "/super-admin/dashboard",
+      "description": "Full system access - Can manage all aspects of the system"
+    },
+    "developer": {
+      "role_id": 2,
+      "role_name": "Developer",
+      "type_id": 2,
+      "permissions": {
+        "accounts": {
+          "create": false,
+          "read": true,
+          "update": false,
+          "delete": false
+        },
+        "users": {
+          "create": false,
+          "read": true,
+          "update": false,
+          "delete": false
+        },
+        "organizations": {
+          "create": false,
+          "read": true,
+          "update": false,
+          "delete": false
+        },
+        "branches": {
+          "create": false,
+          "read": true,
+          "update": false,
+          "delete": false
+        },
+        "atms": {
+          "create": false,
+          "read": true,
+          "update": true,
+          "delete": false
+        },
+        "cameras": {
+          "create": true,
+          "read": true,
+          "update": true,
+          "delete": true
+        },
+        "services": {
+          "create": true,
+          "read": true,
+          "update": true,
+          "delete": false
+        },
+        "reports": {
+          "view_all": true,
+          "export": true
+        },
+        "system": {
+          "manage_roles": false,
+          "manage_settings": true,
+          "view_logs": true,
+          "api_access": true,
+          "debug_mode": true
+        }
+      },
+      "dashboard_route": "/developer/dashboard",
+      "description": "Technical access - Can manage cameras, services, and view system data"
+    },
+    "branchManager": {
+      "role_id": 3,
+      "role_name": "Branch Manager",
+      "type_id": 3,
+      "permissions": {
+        "accounts": {
+          "create": false,
+          "read": false,
+          "update": false,
+          "delete": false
+        },
+        "users": {
+          "create": false,
+          "read": true,
+          "update": false,
+          "delete": false
+        },
+        "organizations": {
+          "create": false,
+          "read": true,
+          "update": false,
+          "delete": false
+        },
+        "branches": {
+          "create": false,
+          "read": true,
+          "update": true,
+          "delete": false,
+          "manage_own": true
+        },
+        "atms": {
+          "create": false,
+          "read": true,
+          "update": true,
+          "delete": false,
+          "manage_branch_atms": true
+        },
+        "cameras": {
+          "create": false,
+          "read": true,
+          "update": false,
+          "delete": false,
+          "view_branch_cameras": true
+        },
+        "services": {
+          "create": false,
+          "read": true,
+          "update": false,
+          "delete": false
+        },
+        "reports": {
+          "view_all": false,
+          "view_branch": true,
+          "export": true
+        },
+        "system": {
+          "manage_roles": false,
+          "manage_settings": false,
+          "view_logs": false
+        }
+      },
+      "dashboard_route": "/branch-manager/dashboard",
+      "description": "Branch level access - Can manage their branch, ATMs, and view branch data"
+    },
+    "organizationAdmin": {
+      "role_id": 4,
+      "role_name": "Organization Admin",
+      "type_id": 4,
+      "permissions": {
+        "accounts": {
+          "create": false,
+          "read": false,
+          "update": false,
+          "delete": false
+        },
+        "users": {
+          "create": true,
+          "read": true,
+          "update": true,
+          "delete": false,
+          "manage_org_users": true
+        },
+        "organizations": {
+          "create": false,
+          "read": true,
+          "update": true,
+          "delete": false,
+          "manage_own": true
+        },
+        "branches": {
+          "create": true,
+          "read": true,
+          "update": true,
+          "delete": false,
+          "manage_org_branches": true
+        },
+        "atms": {
+          "create": false,
+          "read": true,
+          "update": false,
+          "delete": false,
+          "view_org_atms": true
+        },
+        "cameras": {
+          "create": false,
+          "read": true,
+          "update": false,
+          "delete": false,
+          "view_org_cameras": true
+        },
+        "services": {
+          "create": false,
+          "read": true,
+          "update": false,
+          "delete": false
+        },
+        "reports": {
+          "view_all": false,
+          "view_organization": true,
+          "export": true
+        },
+        "system": {
+          "manage_roles": false,
+          "manage_settings": false,
+          "view_logs": false
+        }
+      },
+      "dashboard_route": "/organization/dashboard",
+      "description": "Organization level access - Can manage organization, branches, and users"
+    }
+  },
+  "routeProtection": {
+    "/super-admin/*": [1],
+    "/developer/*": [2],
+    "/branch-manager/*": [3],
+    "/organization/*": [4],
+    "/admin/*": [1, 2]
+  }
+}

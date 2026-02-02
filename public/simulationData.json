@@ -1,0 +1,1977 @@
+{
+  "accountStatus": [
+    {
+      "status_id": 1,
+      "status_name": "Active"
+    },
+    {
+      "status_id": 2,
+      "status_name": "Inactive"
+    },
+    {
+      "status_id": 3,
+      "status_name": "Suspended"
+    },
+    {
+      "status_id": 4,
+      "status_name": "Pending"
+    }
+  ],
+  "accountType": [
+    {
+      "type_id": 1,
+      "type_name": "Organization Super Admin"
+    },
+    {
+      "type_id": 2,
+      "type_name": "Developer"
+    },
+    {
+      "type_id": 3,
+      "type_name": "Branch Manager"
+    },
+    {
+      "type_id": 4,
+      "type_name": "User"
+    }
+  ],
+  "role": [
+    {
+      "role_id": 1,
+      "role_name": "Organization Super Admin"
+    },
+    {
+      "role_id": 2,
+      "role_name": "Developer"
+    },
+    {
+      "role_id": 3,
+      "role_name": "Branch Manager"
+    },
+    {
+      "role_id": 4,
+      "role_name": "Regular User"
+    }
+  ],
+  "accounts": [
+    {
+      "account_id": 1,
+      "email": "admin@civilregistry.gov.eg",
+      "password_hash": "$2b$10$XQJ9Z8xGfH5yL2mN3pQ4rO",
+      "status_id": 1,
+      "type_id": 1,
+      "org_id": 1,
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "account_id": 2,
+      "email": "admin@nbe.com.eg",
+      "password_hash": "$2b$10$YRK0A9yHgI6zM3oO4qR5sP",
+      "status_id": 1,
+      "type_id": 1,
+      "org_id": 2,
+      "created_at": "2026-01-02T10:00:00Z",
+      "updated_at": "2026-01-02T10:00:00Z"
+    },
+    {
+      "account_id": 3,
+      "email": "admin@banquemisr.com",
+      "password_hash": "$2b$10$ZSL1B0zIhJ7aN4pP5rS6tQ",
+      "status_id": 1,
+      "type_id": 1,
+      "org_id": 3,
+      "created_at": "2026-01-03T10:00:00Z",
+      "updated_at": "2026-01-03T10:00:00Z"
+    },
+    {
+      "account_id": 4,
+      "email": "admin@cib.com.eg",
+      "password_hash": "$2b$10$ATM2C1AJiK8bO5qQ6sT7uR",
+      "status_id": 1,
+      "type_id": 1,
+      "org_id": 4,
+      "created_at": "2026-01-04T10:00:00Z",
+      "updated_at": "2026-01-04T10:00:00Z"
+    },
+    {
+      "account_id": 5,
+      "email": "developer@system.com",
+      "password_hash": "$2b$10$BTM3D2BKjL9cP6rR7tU8vS",
+      "status_id": 1,
+      "type_id": 2,
+      "org_id": null,
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-05T10:00:00Z"
+    },
+    {
+      "account_id": 6,
+      "email": "manager.tahrir@civilregistry.gov.eg",
+      "password_hash": "$2b$10$CTM4E3CLkM0dQ7sS8uV9wT",
+      "status_id": 1,
+      "type_id": 3,
+      "org_id": 1,
+      "branch_id": 1,
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-06T10:00:00Z"
+    },
+    {
+      "account_id": 7,
+      "email": "manager.nasrcity@civilregistry.gov.eg",
+      "password_hash": "$2b$10$DTM5F4DMlN1eR8tT9vW0xU",
+      "status_id": 1,
+      "type_id": 3,
+      "org_id": 1,
+      "branch_id": 2,
+      "created_at": "2026-01-07T10:00:00Z",
+      "updated_at": "2026-01-07T10:00:00Z"
+    },
+    {
+      "account_id": 8,
+      "email": "manager.tahrir@nbe.com.eg",
+      "password_hash": "$2b$10$ETM6G5ENmO2fS9uU0wX1yV",
+      "status_id": 1,
+      "type_id": 3,
+      "org_id": 2,
+      "branch_id": 13,
+      "created_at": "2026-01-08T10:00:00Z",
+      "updated_at": "2026-01-08T10:00:00Z"
+    },
+    {
+      "account_id": 9,
+      "email": "manager.nasrcity@nbe.com.eg",
+      "password_hash": "$2b$10$FTM7H6FOoP3gT0vV1xY2zW",
+      "status_id": 1,
+      "type_id": 3,
+      "org_id": 2,
+      "branch_id": 14,
+      "created_at": "2026-01-09T10:00:00Z",
+      "updated_at": "2026-01-09T10:00:00Z"
+    },
+    {
+      "account_id": 10,
+      "email": "manager.dokki@banquemisr.com",
+      "password_hash": "$2b$10$GTM8I7GPqQ4hU1wW2yZ3aX",
+      "status_id": 1,
+      "type_id": 3,
+      "org_id": 3,
+      "branch_id": 21,
+      "created_at": "2026-01-10T10:00:00Z",
+      "updated_at": "2026-01-10T10:00:00Z"
+    },
+    {
+      "account_id": 11,
+      "email": "manager.6october@banquemisr.com",
+      "password_hash": "$2b$10$HTM9J8HQrR5iV2xX3zA4bY",
+      "status_id": 1,
+      "type_id": 3,
+      "org_id": 3,
+      "branch_id": 22,
+      "created_at": "2026-01-11T10:00:00Z",
+      "updated_at": "2026-01-11T10:00:00Z"
+    },
+    {
+      "account_id": 12,
+      "email": "manager.mansoura@civilregistry.gov.eg",
+      "password_hash": "$2b$10$ABC1D2EFgH3iJ4kK5lM6nN",
+      "status_id": 1,
+      "type_id": 3,
+      "org_id": 1,
+      "branch_id": 7,
+      "created_at": "2026-01-12T10:00:00Z",
+      "updated_at": "2026-01-12T10:00:00Z"
+    },
+    {
+      "account_id": 13,
+      "email": "manager.alexandria@civilregistry.gov.eg",
+      "password_hash": "$2b$10$BCD2E3FGhI4jK5lL6mN7oO",
+      "status_id": 1,
+      "type_id": 3,
+      "org_id": 1,
+      "branch_id": 5,
+      "created_at": "2026-01-13T10:00:00Z",
+      "updated_at": "2026-01-13T10:00:00Z"
+    }
+  ],
+  "users": [
+    {
+      "user_id": 1,
+      "role_id": 1,
+      "account_id": 1,
+      "org_id": 1,
+      "name": "Civil Registry Admin",
+      "name_ar": "مسؤول السجل المدني",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "user_id": 2,
+      "role_id": 1,
+      "account_id": 2,
+      "org_id": 2,
+      "name": "NBE Admin",
+      "name_ar": "مسؤول البنك الأهلي",
+      "created_at": "2026-01-02T10:00:00Z",
+      "updated_at": "2026-01-02T10:00:00Z"
+    },
+    {
+      "user_id": 3,
+      "role_id": 1,
+      "account_id": 3,
+      "org_id": 3,
+      "name": "Banque Misr Admin",
+      "name_ar": "مسؤول بنك مصر",
+      "created_at": "2026-01-03T10:00:00Z",
+      "updated_at": "2026-01-03T10:00:00Z"
+    },
+    {
+      "user_id": 4,
+      "role_id": 1,
+      "account_id": 4,
+      "org_id": 4,
+      "name": "CIB Admin",
+      "name_ar": "مسؤول البنك التجاري الدولي",
+      "created_at": "2026-01-04T10:00:00Z",
+      "updated_at": "2026-01-04T10:00:00Z"
+    },
+    {
+      "user_id": 5,
+      "role_id": 2,
+      "account_id": 5,
+      "org_id": null,
+      "name": "System Developer",
+      "name_ar": "مطور النظام",
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-05T10:00:00Z"
+    },
+    {
+      "user_id": 6,
+      "role_id": 3,
+      "account_id": 6,
+      "org_id": 1,
+      "branch_id": 1,
+      "name": "Ahmed Hassan",
+      "name_ar": "أحمد حسن",
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-06T10:00:00Z"
+    },
+    {
+      "user_id": 7,
+      "role_id": 3,
+      "account_id": 7,
+      "org_id": 1,
+      "branch_id": 2,
+      "name": "Mohamed Ali",
+      "name_ar": "محمد علي",
+      "created_at": "2026-01-07T10:00:00Z",
+      "updated_at": "2026-01-07T10:00:00Z"
+    },
+    {
+      "user_id": 8,
+      "role_id": 3,
+      "account_id": 8,
+      "org_id": 2,
+      "branch_id": 13,
+      "name": "Omar Khaled",
+      "name_ar": "عمر خالد",
+      "created_at": "2026-01-08T10:00:00Z",
+      "updated_at": "2026-01-08T10:00:00Z"
+    },
+    {
+      "user_id": 9,
+      "role_id": 3,
+      "account_id": 9,
+      "org_id": 2,
+      "branch_id": 14,
+      "name": "Youssef Mahmoud",
+      "name_ar": "يوسف محمود",
+      "created_at": "2026-01-09T10:00:00Z",
+      "updated_at": "2026-01-09T10:00:00Z"
+    },
+    {
+      "user_id": 10,
+      "role_id": 3,
+      "account_id": 10,
+      "org_id": 3,
+      "branch_id": 21,
+      "name": "Hassan Ibrahim",
+      "name_ar": "حسن إبراهيم",
+      "created_at": "2026-01-10T10:00:00Z",
+      "updated_at": "2026-01-10T10:00:00Z"
+    },
+    {
+      "user_id": 11,
+      "role_id": 3,
+      "account_id": 11,
+      "org_id": 3,
+      "branch_id": 22,
+      "name": "Karim Saeed",
+      "name_ar": "كريم سعيد",
+      "created_at": "2026-01-11T10:00:00Z",
+      "updated_at": "2026-01-11T10:00:00Z"
+    },
+    {
+      "user_id": 12,
+      "role_id": 3,
+      "account_id": 12,
+      "org_id": 1,
+      "branch_id": 7,
+      "name": "Mahmoud Fathy",
+      "name_ar": "محمود فتحي",
+      "created_at": "2026-01-12T10:00:00Z",
+      "updated_at": "2026-01-12T10:00:00Z"
+    },
+    {
+      "user_id": 13,
+      "role_id": 3,
+      "account_id": 13,
+      "org_id": 1,
+      "branch_id": 5,
+      "name": "Amr Mostafa",
+      "name_ar": "عمرو مصطفى",
+      "created_at": "2026-01-13T10:00:00Z",
+      "updated_at": "2026-01-13T10:00:00Z"
+    }
+  ],
+  "governorate": [
+    {
+      "governorate_id": 1,
+      "governorate_name_en": "Cairo",
+      "governorate_name_ar": "القاهرة",
+      "region": "Greater Cairo"
+    },
+    {
+      "governorate_id": 2,
+      "governorate_name_en": "Giza",
+      "governorate_name_ar": "الجيزة",
+      "region": "Greater Cairo"
+    },
+    {
+      "governorate_id": 3,
+      "governorate_name_en": "Alexandria",
+      "governorate_name_ar": "الإسكندرية",
+      "region": "Alexandria"
+    },
+    {
+      "governorate_id": 4,
+      "governorate_name_en": "Dakahlia",
+      "governorate_name_ar": "الدقهلية",
+      "region": "Delta"
+    },
+    {
+      "governorate_id": 5,
+      "governorate_name_en": "Sharqia",
+      "governorate_name_ar": "الشرقية",
+      "region": "Delta"
+    },
+    {
+      "governorate_id": 6,
+      "governorate_name_en": "Gharbia",
+      "governorate_name_ar": "الغربية",
+      "region": "Delta"
+    },
+    {
+      "governorate_id": 7,
+      "governorate_name_en": "Qalyubia",
+      "governorate_name_ar": "القليوبية",
+      "region": "Greater Cairo"
+    },
+    {
+      "governorate_id": 8,
+      "governorate_name_en": "Beheira",
+      "governorate_name_ar": "البحيرة",
+      "region": "Delta"
+    },
+    {
+      "governorate_id": 9,
+      "governorate_name_en": "Minya",
+      "governorate_name_ar": "المنيا",
+      "region": "Upper Egypt"
+    },
+    {
+      "governorate_id": 10,
+      "governorate_name_en": "Asyut",
+      "governorate_name_ar": "أسيوط",
+      "region": "Upper Egypt"
+    }
+  ],
+  "location": [
+    {
+      "location_id": 1,
+      "governorate_id": 1,
+      "latitude": 30.0444,
+      "longitude": 31.2357,
+      "address_details_en": "Tahrir Square, Cairo",
+      "address_details_ar": "ميدان التحرير، القاهرة",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 2,
+      "governorate_id": 1,
+      "latitude": 30.0626,
+      "longitude": 31.2497,
+      "address_details_en": "Nasr City, Cairo",
+      "address_details_ar": "مدينة نصر، القاهرة",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 3,
+      "governorate_id": 2,
+      "latitude": 30.0131,
+      "longitude": 31.2089,
+      "address_details_en": "Dokki, Giza",
+      "address_details_ar": "الدقي، الجيزة",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 4,
+      "governorate_id": 2,
+      "latitude": 29.9872,
+      "longitude": 31.2118,
+      "address_details_en": "6th October City, Giza",
+      "address_details_ar": "مدينة 6 أكتوبر، الجيزة",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 5,
+      "governorate_id": 3,
+      "latitude": 31.2001,
+      "longitude": 29.9187,
+      "address_details_en": "Smouha, Alexandria",
+      "address_details_ar": "سموحة، الإسكندرية",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 6,
+      "governorate_id": 3,
+      "latitude": 31.2156,
+      "longitude": 29.9553,
+      "address_details_en": "Downtown, Alexandria",
+      "address_details_ar": "وسط البلد، الإسكندرية",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 7,
+      "governorate_id": 4,
+      "latitude": 31.0409,
+      "longitude": 31.3785,
+      "address_details_en": "Mansoura City Center, Dakahlia",
+      "address_details_ar": "وسط مدينة المنصورة، الدقهلية",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 8,
+      "governorate_id": 4,
+      "latitude": 31.0504,
+      "longitude": 31.3967,
+      "address_details_en": "Mit Ghamr, Dakahlia",
+      "address_details_ar": "ميت غمر، الدقهلية",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 9,
+      "governorate_id": 5,
+      "latitude": 30.5852,
+      "longitude": 31.503,
+      "address_details_en": "Zagazig, Sharqia",
+      "address_details_ar": "الزقازيق، الشرقية",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 10,
+      "governorate_id": 5,
+      "latitude": 30.4707,
+      "longitude": 31.5514,
+      "address_details_en": "10th of Ramadan City, Sharqia",
+      "address_details_ar": "مدينة العاشر من رمضان، الشرقية",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 11,
+      "governorate_id": 6,
+      "latitude": 30.8754,
+      "longitude": 31.0335,
+      "address_details_en": "Tanta, Gharbia",
+      "address_details_ar": "طنطا، الغربية",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 12,
+      "governorate_id": 6,
+      "latitude": 30.9411,
+      "longitude": 31.1656,
+      "address_details_en": "Mahalla, Gharbia",
+      "address_details_ar": "المحلة الكبرى، الغربية",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 13,
+      "governorate_id": 7,
+      "latitude": 30.1798,
+      "longitude": 31.2953,
+      "address_details_en": "Shubra El Kheima, Qalyubia",
+      "address_details_ar": "شبرا الخيمة، القليوبية",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 14,
+      "governorate_id": 7,
+      "latitude": 30.2213,
+      "longitude": 31.2974,
+      "address_details_en": "Banha, Qalyubia",
+      "address_details_ar": "بنها، القليوبية",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 15,
+      "governorate_id": 8,
+      "latitude": 31.037,
+      "longitude": 30.4661,
+      "address_details_en": "Damanhur, Beheira",
+      "address_details_ar": "دمنهور، البحيرة",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 16,
+      "governorate_id": 8,
+      "latitude": 30.8481,
+      "longitude": 30.3436,
+      "address_details_en": "Kafr El Dawwar, Beheira",
+      "address_details_ar": "كفر الدوار، البحيرة",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 17,
+      "governorate_id": 9,
+      "latitude": 28.0871,
+      "longitude": 30.7618,
+      "address_details_en": "Minya City, Minya",
+      "address_details_ar": "مدينة المنيا، المنيا",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 18,
+      "governorate_id": 9,
+      "latitude": 27.9654,
+      "longitude": 30.8282,
+      "address_details_en": "Mallawi, Minya",
+      "address_details_ar": "ملوي، المنيا",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 19,
+      "governorate_id": 10,
+      "latitude": 27.1809,
+      "longitude": 31.1837,
+      "address_details_en": "Asyut City, Asyut",
+      "address_details_ar": "مدينة أسيوط، أسيوط",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 20,
+      "governorate_id": 10,
+      "latitude": 27.2579,
+      "longitude": 31.1656,
+      "address_details_en": "Abnub, Asyut",
+      "address_details_ar": "أبنوب، أسيوط",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 21,
+      "governorate_id": 1,
+      "latitude": 30.0752,
+      "longitude": 31.2859,
+      "address_details_en": "Heliopolis, Cairo",
+      "address_details_ar": "مصر الجديدة، القاهرة",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 22,
+      "governorate_id": 1,
+      "latitude": 30.0131,
+      "longitude": 31.2089,
+      "address_details_en": "Maadi, Cairo",
+      "address_details_ar": "المعادي، القاهرة",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 23,
+      "governorate_id": 2,
+      "latitude": 30.0444,
+      "longitude": 31.2089,
+      "address_details_en": "Mohandessin, Giza",
+      "address_details_ar": "المهندسين، الجيزة",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 24,
+      "governorate_id": 2,
+      "latitude": 29.9792,
+      "longitude": 31.1343,
+      "address_details_en": "Sheikh Zayed City, Giza",
+      "address_details_ar": "مدينة الشيخ زايد، الجيزة",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 25,
+      "governorate_id": 3,
+      "latitude": 31.2118,
+      "longitude": 29.8869,
+      "address_details_en": "Sidi Gaber, Alexandria",
+      "address_details_ar": "سيدي جابر، الإسكندرية",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "location_id": 26,
+      "governorate_id": 3,
+      "latitude": 31.1948,
+      "longitude": 29.9069,
+      "address_details_en": "Sporting, Alexandria",
+      "address_details_ar": "سبورتنج، الإسكندرية",
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    }
+  ],
+  "organization": [
+    {
+      "org_id": 1,
+      "org_name_en": "Egyptian Civil Registry",
+      "org_name_ar": "السجل المدني المصري",
+      "org_abbreviation": "ECR",
+      "org_type": "civil_registry",
+      "org_social_link": "https://civilregistry.gov.eg",
+      "org_picture": "/images/civil-registry-logo.png",
+      "isActive": true,
+      "org_description_en": "Official Egyptian Civil Registry for identity and documentation services",
+      "org_description_ar": "السجل المدني المصري الرسمي لخدمات الهوية والتوثيق",
+      "created_at": "2026-01-04T10:00:00Z",
+      "updated_at": "2026-01-04T10:00:00Z"
+    },
+    {
+      "org_id": 2,
+      "org_name_en": "National Bank of Egypt",
+      "org_name_ar": "البنك الأهلي المصري",
+      "org_abbreviation": "NBE",
+      "org_type": "bank",
+      "org_social_link": "https://nbe.com.eg",
+      "org_picture": "/images/nbe-logo.png",
+      "isActive": true,
+      "org_description_en": "Egypt's first and largest bank",
+      "org_description_ar": "البنك الأول والأكبر في مصر",
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-05T10:00:00Z"
+    },
+    {
+      "org_id": 3,
+      "org_name_en": "Banque Misr",
+      "org_name_ar": "بنك مصر",
+      "org_abbreviation": "BM",
+      "org_type": "bank",
+      "org_social_link": "https://banquemisr.com",
+      "org_picture": "/images/bm-logo.png",
+      "isActive": true,
+      "org_description_en": "Leading Egyptian banking institution",
+      "org_description_ar": "مؤسسة مصرفية مصرية رائدة",
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-06T10:00:00Z"
+    },
+    {
+      "org_id": 4,
+      "org_name_en": "Commercial International Bank",
+      "org_name_ar": "البنك التجاري الدولي",
+      "org_abbreviation": "CIB",
+      "org_type": "bank",
+      "org_social_link": "https://cib.com.eg",
+      "org_picture": "/images/cib-logo.png",
+      "isActive": true,
+      "org_description_en": "Leading private sector bank in Egypt",
+      "org_description_ar": "البنك الرائد في القطاع الخاص في مصر",
+      "created_at": "2026-01-07T10:00:00Z",
+      "updated_at": "2026-01-07T10:00:00Z"
+    }
+  ],
+  "services": [
+    {
+      "service_id": 1,
+      "service_name_en": "Birth Certificate Issuance",
+      "service_name_ar": "استخراج شهادة ميلاد",
+      "service_category": "civil_registry",
+      "isActive": true,
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "service_id": 2,
+      "service_name_en": "Death Certificate Issuance",
+      "service_name_ar": "استخراج شهادة وفاة",
+      "service_category": "civil_registry",
+      "isActive": true,
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "service_id": 3,
+      "service_name_en": "National ID Card Issuance",
+      "service_name_ar": "استخراج بطاقة رقم قومي",
+      "service_category": "civil_registry",
+      "isActive": true,
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "service_id": 4,
+      "service_name_en": "National ID Card Renewal",
+      "service_name_ar": "تجديد بطاقة رقم قومي",
+      "service_category": "civil_registry",
+      "isActive": true,
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "service_id": 5,
+      "service_name_en": "Marriage Certificate",
+      "service_name_ar": "عقد زواج",
+      "service_category": "civil_registry",
+      "isActive": true,
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "service_id": 6,
+      "service_name_en": "Divorce Certificate",
+      "service_name_ar": "عقد طلاق",
+      "service_category": "civil_registry",
+      "isActive": true,
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "service_id": 7,
+      "service_name_en": "Criminal Record Certificate",
+      "service_name_ar": "شهادة عدم محكومية",
+      "service_category": "civil_registry",
+      "isActive": true,
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "service_id": 8,
+      "service_name_en": "Family Record Issuance",
+      "service_name_ar": "قيد عائلي",
+      "service_category": "civil_registry",
+      "isActive": true,
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "service_id": 9,
+      "service_name_en": "Cash Withdrawal",
+      "service_name_ar": "سحب نقدي",
+      "service_category": "bank",
+      "isActive": true,
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "service_id": 10,
+      "service_name_en": "Cash Deposit",
+      "service_name_ar": "إيداع نقدي",
+      "service_category": "bank",
+      "isActive": true,
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "service_id": 11,
+      "service_name_en": "Balance Inquiry",
+      "service_name_ar": "الاستعلام عن الرصيد",
+      "service_category": "bank",
+      "isActive": true,
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "service_id": 12,
+      "service_name_en": "Account Opening",
+      "service_name_ar": "فتح حساب",
+      "service_category": "bank",
+      "isActive": true,
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "service_id": 13,
+      "service_name_en": "Money Transfer",
+      "service_name_ar": "تحويل أموال",
+      "service_category": "bank",
+      "isActive": true,
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    },
+    {
+      "service_id": 14,
+      "service_name_en": "Loan Services",
+      "service_name_ar": "خدمات القروض",
+      "service_category": "bank",
+      "isActive": true,
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z"
+    }
+  ],
+  "branch": [
+    {
+      "branch_id": 1,
+      "branch_code": "ECR-CAI-001",
+      "org_id": 1,
+      "location_id": 1,
+      "branch_name_en": "Tahrir Civil Registry",
+      "branch_name_ar": "سجل مدني التحرير",
+      "isActive": true,
+      "phone": "+20233456789",
+      "email": "tahrir@civilregistry.gov.eg",
+      "working_hours": "8:00 AM - 3:00 PM",
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-05T10:00:00Z"
+    },
+    {
+      "branch_id": 2,
+      "branch_code": "ECR-CAI-002",
+      "org_id": 1,
+      "location_id": 2,
+      "branch_name_en": "Nasr City Civil Registry",
+      "branch_name_ar": "سجل مدني مدينة نصر",
+      "isActive": true,
+      "phone": "+20233456790",
+      "email": "nasrcity@civilregistry.gov.eg",
+      "working_hours": "8:00 AM - 3:00 PM",
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-05T10:00:00Z"
+    },
+    {
+      "branch_id": 3,
+      "branch_code": "ECR-GIZ-001",
+      "org_id": 1,
+      "location_id": 3,
+      "branch_name_en": "Dokki Civil Registry",
+      "branch_name_ar": "سجل مدني الدقي",
+      "isActive": true,
+      "phone": "+20233456791",
+      "email": "dokki@civilregistry.gov.eg",
+      "working_hours": "8:00 AM - 3:00 PM",
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-05T10:00:00Z"
+    },
+    {
+      "branch_id": 4,
+      "branch_code": "ECR-GIZ-002",
+      "org_id": 1,
+      "location_id": 4,
+      "branch_name_en": "6th October Civil Registry",
+      "branch_name_ar": "سجل مدني 6 أكتوبر",
+      "isActive": true,
+      "phone": "+20233456792",
+      "email": "6october@civilregistry.gov.eg",
+      "working_hours": "8:00 AM - 3:00 PM",
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-05T10:00:00Z"
+    },
+    {
+      "branch_id": 5,
+      "branch_code": "ECR-ALX-001",
+      "org_id": 1,
+      "location_id": 5,
+      "branch_name_en": "Smouha Civil Registry",
+      "branch_name_ar": "سجل مدني سموحة",
+      "isActive": true,
+      "phone": "+20233456793",
+      "email": "smouha@civilregistry.gov.eg",
+      "working_hours": "8:00 AM - 3:00 PM",
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-05T10:00:00Z"
+    },
+    {
+      "branch_id": 6,
+      "branch_code": "ECR-ALX-002",
+      "org_id": 1,
+      "location_id": 6,
+      "branch_name_en": "Downtown Alexandria Civil Registry",
+      "branch_name_ar": "سجل مدني وسط الإسكندرية",
+      "isActive": true,
+      "phone": "+20233456794",
+      "email": "downtown-alex@civilregistry.gov.eg",
+      "working_hours": "8:00 AM - 3:00 PM",
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-05T10:00:00Z"
+    },
+    {
+      "branch_id": 7,
+      "branch_code": "ECR-DAK-001",
+      "org_id": 1,
+      "location_id": 7,
+      "branch_name_en": "Mansoura Civil Registry",
+      "branch_name_ar": "سجل مدني المنصورة",
+      "isActive": true,
+      "phone": "+20233456795",
+      "email": "mansoura@civilregistry.gov.eg",
+      "working_hours": "8:00 AM - 3:00 PM",
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-05T10:00:00Z"
+    },
+    {
+      "branch_id": 8,
+      "branch_code": "ECR-DAK-002",
+      "org_id": 1,
+      "location_id": 8,
+      "branch_name_en": "Mit Ghamr Civil Registry",
+      "branch_name_ar": "سجل مدني ميت غمر",
+      "isActive": true,
+      "phone": "+20233456796",
+      "email": "mitghamr@civilregistry.gov.eg",
+      "working_hours": "8:00 AM - 3:00 PM",
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-05T10:00:00Z"
+    },
+    {
+      "branch_id": 9,
+      "branch_code": "ECR-CAI-003",
+      "org_id": 1,
+      "location_id": 21,
+      "branch_name_en": "Heliopolis Civil Registry",
+      "branch_name_ar": "سجل مدني مصر الجديدة",
+      "isActive": true,
+      "phone": "+20233456797",
+      "email": "heliopolis@civilregistry.gov.eg",
+      "working_hours": "8:00 AM - 3:00 PM",
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-05T10:00:00Z"
+    },
+    {
+      "branch_id": 10,
+      "branch_code": "ECR-CAI-004",
+      "org_id": 1,
+      "location_id": 22,
+      "branch_name_en": "Maadi Civil Registry",
+      "branch_name_ar": "سجل مدني المعادي",
+      "isActive": true,
+      "phone": "+20233456798",
+      "email": "maadi@civilregistry.gov.eg",
+      "working_hours": "8:00 AM - 3:00 PM",
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-05T10:00:00Z"
+    },
+    {
+      "branch_id": 11,
+      "branch_code": "ECR-GIZ-003",
+      "org_id": 1,
+      "location_id": 23,
+      "branch_name_en": "Mohandessin Civil Registry",
+      "branch_name_ar": "سجل مدني المهندسين",
+      "isActive": true,
+      "phone": "+20233456799",
+      "email": "mohandessin@civilregistry.gov.eg",
+      "working_hours": "8:00 AM - 3:00 PM",
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-05T10:00:00Z"
+    },
+    {
+      "branch_id": 12,
+      "branch_code": "ECR-ALX-003",
+      "org_id": 1,
+      "location_id": 25,
+      "branch_name_en": "Sidi Gaber Civil Registry",
+      "branch_name_ar": "سجل مدني سيدي جابر",
+      "isActive": true,
+      "phone": "+20233456800",
+      "email": "sidigaber@civilregistry.gov.eg",
+      "working_hours": "8:00 AM - 3:00 PM",
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-05T10:00:00Z"
+    },
+    {
+      "branch_id": 13,
+      "branch_code": "NBE-CAI-001",
+      "org_id": 2,
+      "location_id": 1,
+      "branch_name_en": "NBE Tahrir Branch",
+      "branch_name_ar": "فرع البنك الأهلي التحرير",
+      "isActive": true,
+      "phone": "+20225456789",
+      "email": "tahrir@nbe.com.eg",
+      "working_hours": "9:00 AM - 4:00 PM",
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-06T10:00:00Z"
+    },
+    {
+      "branch_id": 14,
+      "branch_code": "NBE-CAI-002",
+      "org_id": 2,
+      "location_id": 2,
+      "branch_name_en": "NBE Nasr City Branch",
+      "branch_name_ar": "فرع البنك الأهلي مدينة نصر",
+      "isActive": true,
+      "phone": "+20225456790",
+      "email": "nasrcity@nbe.com.eg",
+      "working_hours": "9:00 AM - 4:00 PM",
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-06T10:00:00Z"
+    },
+    {
+      "branch_id": 15,
+      "branch_code": "NBE-CAI-003",
+      "org_id": 2,
+      "location_id": 21,
+      "branch_name_en": "NBE Heliopolis Branch",
+      "branch_name_ar": "فرع البنك الأهلي مصر الجديدة",
+      "isActive": true,
+      "phone": "+20225456791",
+      "email": "heliopolis@nbe.com.eg",
+      "working_hours": "9:00 AM - 4:00 PM",
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-06T10:00:00Z"
+    },
+    {
+      "branch_id": 16,
+      "branch_code": "NBE-CAI-004",
+      "org_id": 2,
+      "location_id": 22,
+      "branch_name_en": "NBE Maadi Branch",
+      "branch_name_ar": "فرع البنك الأهلي المعادي",
+      "isActive": true,
+      "phone": "+20225456792",
+      "email": "maadi@nbe.com.eg",
+      "working_hours": "9:00 AM - 4:00 PM",
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-06T10:00:00Z"
+    },
+    {
+      "branch_id": 17,
+      "branch_code": "NBE-GIZ-001",
+      "org_id": 2,
+      "location_id": 3,
+      "branch_name_en": "NBE Dokki Branch",
+      "branch_name_ar": "فرع البنك الأهلي الدقي",
+      "isActive": true,
+      "phone": "+20225456793",
+      "email": "dokki@nbe.com.eg",
+      "working_hours": "9:00 AM - 4:00 PM",
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-06T10:00:00Z"
+    },
+    {
+      "branch_id": 18,
+      "branch_code": "NBE-GIZ-002",
+      "org_id": 2,
+      "location_id": 23,
+      "branch_name_en": "NBE Mohandessin Branch",
+      "branch_name_ar": "فرع البنك الأهلي المهندسين",
+      "isActive": true,
+      "phone": "+20225456794",
+      "email": "mohandessin@nbe.com.eg",
+      "working_hours": "9:00 AM - 4:00 PM",
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-06T10:00:00Z"
+    },
+    {
+      "branch_id": 19,
+      "branch_code": "NBE-ALX-001",
+      "org_id": 2,
+      "location_id": 5,
+      "branch_name_en": "NBE Smouha Branch",
+      "branch_name_ar": "فرع البنك الأهلي سموحة",
+      "isActive": true,
+      "phone": "+20225456795",
+      "email": "smouha@nbe.com.eg",
+      "working_hours": "9:00 AM - 4:00 PM",
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-06T10:00:00Z"
+    },
+    {
+      "branch_id": 20,
+      "branch_code": "NBE-ALX-002",
+      "org_id": 2,
+      "location_id": 25,
+      "branch_name_en": "NBE Sidi Gaber Branch",
+      "branch_name_ar": "فرع البنك الأهلي سيدي جابر",
+      "isActive": true,
+      "phone": "+20225456796",
+      "email": "sidigaber@nbe.com.eg",
+      "working_hours": "9:00 AM - 4:00 PM",
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-06T10:00:00Z"
+    },
+    {
+      "branch_id": 21,
+      "branch_code": "BM-GIZ-001",
+      "org_id": 3,
+      "location_id": 3,
+      "branch_name_en": "Banque Misr Dokki Branch",
+      "branch_name_ar": "فرع بنك مصر الدقي",
+      "isActive": true,
+      "phone": "+20225456801",
+      "email": "dokki@banquemisr.com",
+      "working_hours": "9:00 AM - 4:00 PM",
+      "created_at": "2026-01-07T10:00:00Z",
+      "updated_at": "2026-01-07T10:00:00Z"
+    },
+    {
+      "branch_id": 22,
+      "branch_code": "BM-GIZ-002",
+      "org_id": 3,
+      "location_id": 4,
+      "branch_name_en": "Banque Misr 6th October Branch",
+      "branch_name_ar": "فرع بنك مصر 6 أكتوبر",
+      "isActive": true,
+      "phone": "+20225456802",
+      "email": "6october@banquemisr.com",
+      "working_hours": "9:00 AM - 4:00 PM",
+      "created_at": "2026-01-07T10:00:00Z",
+      "updated_at": "2026-01-07T10:00:00Z"
+    },
+    {
+      "branch_id": 23,
+      "branch_code": "BM-GIZ-003",
+      "org_id": 3,
+      "location_id": 23,
+      "branch_name_en": "Banque Misr Mohandessin Branch",
+      "branch_name_ar": "فرع بنك مصر المهندسين",
+      "isActive": true,
+      "phone": "+20225456803",
+      "email": "mohandessin@banquemisr.com",
+      "working_hours": "9:00 AM - 4:00 PM",
+      "created_at": "2026-01-07T10:00:00Z",
+      "updated_at": "2026-01-07T10:00:00Z"
+    },
+    {
+      "branch_id": 24,
+      "branch_code": "BM-CAI-001",
+      "org_id": 3,
+      "location_id": 1,
+      "branch_name_en": "Banque Misr Tahrir Branch",
+      "branch_name_ar": "فرع بنك مصر التحرير",
+      "isActive": true,
+      "phone": "+20225456804",
+      "email": "tahrir@banquemisr.com",
+      "working_hours": "9:00 AM - 4:00 PM",
+      "created_at": "2026-01-07T10:00:00Z",
+      "updated_at": "2026-01-07T10:00:00Z"
+    },
+    {
+      "branch_id": 25,
+      "branch_code": "BM-CAI-002",
+      "org_id": 3,
+      "location_id": 21,
+      "branch_name_en": "Banque Misr Heliopolis Branch",
+      "branch_name_ar": "فرع بنك مصر مصر الجديدة",
+      "isActive": true,
+      "phone": "+20225456805",
+      "email": "heliopolis@banquemisr.com",
+      "working_hours": "9:00 AM - 4:00 PM",
+      "created_at": "2026-01-07T10:00:00Z",
+      "updated_at": "2026-01-07T10:00:00Z"
+    },
+    {
+      "branch_id": 26,
+      "branch_code": "BM-ALX-001",
+      "org_id": 3,
+      "location_id": 5,
+      "branch_name_en": "Banque Misr Smouha Branch",
+      "branch_name_ar": "فرع بنك مصر سموحة",
+      "isActive": true,
+      "phone": "+20225456806",
+      "email": "smouha@banquemisr.com",
+      "working_hours": "9:00 AM - 4:00 PM",
+      "created_at": "2026-01-07T10:00:00Z",
+      "updated_at": "2026-01-07T10:00:00Z"
+    },
+    {
+      "branch_id": 27,
+      "branch_code": "CIB-ALX-001",
+      "org_id": 4,
+      "location_id": 5,
+      "branch_name_en": "CIB Smouha Branch",
+      "branch_name_ar": "فرع البنك التجاري الدولي سموحة",
+      "isActive": true,
+      "phone": "+20225456807",
+      "email": "smouha@cib.com.eg",
+      "working_hours": "9:00 AM - 4:00 PM",
+      "created_at": "2026-01-08T10:00:00Z",
+      "updated_at": "2026-01-08T10:00:00Z"
+    },
+    {
+      "branch_id": 28,
+      "branch_code": "CIB-ALX-002",
+      "org_id": 4,
+      "location_id": 6,
+      "branch_name_en": "CIB Downtown Alexandria Branch",
+      "branch_name_ar": "فرع البنك التجاري الدولي وسط الإسكندرية",
+      "isActive": true,
+      "phone": "+20225456808",
+      "email": "downtown-alex@cib.com.eg",
+      "working_hours": "9:00 AM - 4:00 PM",
+      "created_at": "2026-01-08T10:00:00Z",
+      "updated_at": "2026-01-08T10:00:00Z"
+    },
+    {
+      "branch_id": 29,
+      "branch_code": "CIB-CAI-001",
+      "org_id": 4,
+      "location_id": 1,
+      "branch_name_en": "CIB Tahrir Branch",
+      "branch_name_ar": "فرع البنك التجاري الدولي التحرير",
+      "isActive": true,
+      "phone": "+20225456809",
+      "email": "tahrir@cib.com.eg",
+      "working_hours": "9:00 AM - 4:00 PM",
+      "created_at": "2026-01-08T10:00:00Z",
+      "updated_at": "2026-01-08T10:00:00Z"
+    },
+    {
+      "branch_id": 30,
+      "branch_code": "CIB-CAI-002",
+      "org_id": 4,
+      "location_id": 21,
+      "branch_name_en": "CIB Heliopolis Branch",
+      "branch_name_ar": "فرع البنك التجاري الدولي مصر الجديدة",
+      "isActive": true,
+      "phone": "+20225456810",
+      "email": "heliopolis@cib.com.eg",
+      "working_hours": "9:00 AM - 4:00 PM",
+      "created_at": "2026-01-08T10:00:00Z",
+      "updated_at": "2026-01-08T10:00:00Z"
+    },
+    {
+      "branch_id": 31,
+      "branch_code": "CIB-GIZ-001",
+      "org_id": 4,
+      "location_id": 3,
+      "branch_name_en": "CIB Dokki Branch",
+      "branch_name_ar": "فرع البنك التجاري الدولي الدقي",
+      "isActive": true,
+      "phone": "+20225456811",
+      "email": "dokki@cib.com.eg",
+      "working_hours": "9:00 AM - 4:00 PM",
+      "created_at": "2026-01-08T10:00:00Z",
+      "updated_at": "2026-01-08T10:00:00Z"
+    }
+  ],
+  "branchServices": [
+    {
+      "branch_service_id": 1,
+      "branch_id": 1,
+      "service_id": 1,
+      "isActive": true
+    },
+    {
+      "branch_service_id": 2,
+      "branch_id": 1,
+      "service_id": 2,
+      "isActive": true
+    },
+    {
+      "branch_service_id": 3,
+      "branch_id": 1,
+      "service_id": 3,
+      "isActive": true
+    },
+    {
+      "branch_service_id": 4,
+      "branch_id": 1,
+      "service_id": 4,
+      "isActive": true
+    },
+    {
+      "branch_service_id": 5,
+      "branch_id": 1,
+      "service_id": 5,
+      "isActive": true
+    },
+    {
+      "branch_service_id": 6,
+      "branch_id": 1,
+      "service_id": 6,
+      "isActive": true
+    },
+    {
+      "branch_service_id": 7,
+      "branch_id": 1,
+      "service_id": 7,
+      "isActive": true
+    },
+    {
+      "branch_service_id": 8,
+      "branch_id": 1,
+      "service_id": 8,
+      "isActive": true
+    },
+    {
+      "branch_service_id": 9,
+      "branch_id": 7,
+      "service_id": 1,
+      "isActive": true
+    },
+    {
+      "branch_service_id": 10,
+      "branch_id": 7,
+      "service_id": 2,
+      "isActive": true
+    },
+    {
+      "branch_service_id": 11,
+      "branch_id": 7,
+      "service_id": 3,
+      "isActive": true
+    },
+    {
+      "branch_service_id": 12,
+      "branch_id": 7,
+      "service_id": 4,
+      "isActive": true
+    },
+    {
+      "branch_service_id": 13,
+      "branch_id": 7,
+      "service_id": 5,
+      "isActive": false
+    },
+    {
+      "branch_service_id": 14,
+      "branch_id": 13,
+      "service_id": 9,
+      "isActive": true
+    },
+    {
+      "branch_service_id": 15,
+      "branch_id": 13,
+      "service_id": 10,
+      "isActive": true
+    },
+    {
+      "branch_service_id": 16,
+      "branch_id": 13,
+      "service_id": 11,
+      "isActive": true
+    },
+    {
+      "branch_service_id": 17,
+      "branch_id": 13,
+      "service_id": 12,
+      "isActive": true
+    },
+    {
+      "branch_service_id": 18,
+      "branch_id": 13,
+      "service_id": 13,
+      "isActive": true
+    },
+    {
+      "branch_service_id": 19,
+      "branch_id": 13,
+      "service_id": 14,
+      "isActive": true
+    }
+  ],
+  "denomination": [
+    {
+      "denomination_id": 1,
+      "amount": 10
+    },
+    {
+      "denomination_id": 2,
+      "amount": 20
+    },
+    {
+      "denomination_id": 3,
+      "amount": 50
+    },
+    {
+      "denomination_id": 4,
+      "amount": 100
+    },
+    {
+      "denomination_id": 5,
+      "amount": 200
+    }
+  ],
+  "atm": [
+    {
+      "atm_id": 1,
+      "branch_id": 13,
+      "location_id": 1,
+      "atm_code": "NBE-TAH-ATM-001",
+      "isActive": true,
+      "allows_withdrawal": true,
+      "allows_deposit": true,
+      "manufacturer": "NCR",
+      "model": "SelfServ 80",
+      "serial_number": "NCR-80-2025-001",
+      "installation_date": "2025-12-01",
+      "last_maintenance": "2026-01-15",
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-15T10:00:00Z"
+    },
+    {
+      "atm_id": 2,
+      "branch_id": 13,
+      "location_id": 1,
+      "atm_code": "NBE-TAH-ATM-002",
+      "isActive": true,
+      "allows_withdrawal": true,
+      "allows_deposit": false,
+      "manufacturer": "Diebold Nixdorf",
+      "model": "DN Series",
+      "serial_number": "DN-2025-002",
+      "installation_date": "2025-11-15",
+      "last_maintenance": "2026-01-10",
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-10T10:00:00Z"
+    },
+    {
+      "atm_id": 3,
+      "branch_id": 14,
+      "location_id": 2,
+      "atm_code": "NBE-NSR-ATM-001",
+      "isActive": true,
+      "allows_withdrawal": true,
+      "allows_deposit": true,
+      "manufacturer": "NCR",
+      "model": "SelfServ 90",
+      "serial_number": "NCR-90-2025-003",
+      "installation_date": "2025-12-10",
+      "last_maintenance": "2026-01-20",
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-20T10:00:00Z"
+    },
+    {
+      "atm_id": 4,
+      "branch_id": 21,
+      "location_id": 3,
+      "atm_code": "BM-DOK-ATM-001",
+      "isActive": true,
+      "allows_withdrawal": true,
+      "allows_deposit": true,
+      "manufacturer": "Wincor Nixdorf",
+      "model": "ProCash 3000",
+      "serial_number": "WN-3000-2025-004",
+      "installation_date": "2025-11-20",
+      "last_maintenance": "2026-01-12",
+      "created_at": "2026-01-07T10:00:00Z",
+      "updated_at": "2026-01-12T10:00:00Z"
+    },
+    {
+      "atm_id": 5,
+      "branch_id": 21,
+      "location_id": 3,
+      "atm_code": "BM-DOK-ATM-002",
+      "isActive": true,
+      "allows_withdrawal": true,
+      "allows_deposit": false,
+      "manufacturer": "NCR",
+      "model": "SelfServ 80",
+      "serial_number": "NCR-80-2025-005",
+      "installation_date": "2025-12-05",
+      "last_maintenance": "2026-01-18",
+      "created_at": "2026-01-07T10:00:00Z",
+      "updated_at": "2026-01-18T10:00:00Z"
+    },
+    {
+      "atm_id": 6,
+      "branch_id": 22,
+      "location_id": 4,
+      "atm_code": "BM-6OCT-ATM-001",
+      "isActive": true,
+      "allows_withdrawal": true,
+      "allows_deposit": true,
+      "manufacturer": "Diebold Nixdorf",
+      "model": "DN Series",
+      "serial_number": "DN-2025-006",
+      "installation_date": "2025-12-15",
+      "last_maintenance": "2026-01-25",
+      "created_at": "2026-01-07T10:00:00Z",
+      "updated_at": "2026-01-25T10:00:00Z"
+    },
+    {
+      "atm_id": 7,
+      "branch_id": 27,
+      "location_id": 5,
+      "atm_code": "CIB-SMO-ATM-001",
+      "isActive": true,
+      "allows_withdrawal": true,
+      "allows_deposit": true,
+      "manufacturer": "NCR",
+      "model": "SelfServ 90",
+      "serial_number": "NCR-90-2025-007",
+      "installation_date": "2025-11-25",
+      "last_maintenance": "2026-01-14",
+      "created_at": "2026-01-08T10:00:00Z",
+      "updated_at": "2026-01-14T10:00:00Z"
+    },
+    {
+      "atm_id": 8,
+      "branch_id": 27,
+      "location_id": 5,
+      "atm_code": "CIB-SMO-ATM-002",
+      "isActive": true,
+      "allows_withdrawal": true,
+      "allows_deposit": false,
+      "manufacturer": "Wincor Nixdorf",
+      "model": "ProCash 2100",
+      "serial_number": "WN-2100-2025-008",
+      "installation_date": "2025-12-20",
+      "last_maintenance": "2026-01-22",
+      "created_at": "2026-01-08T10:00:00Z",
+      "updated_at": "2026-01-22T10:00:00Z"
+    },
+    {
+      "atm_id": 9,
+      "branch_id": 28,
+      "location_id": 6,
+      "atm_code": "CIB-DTA-ATM-001",
+      "isActive": true,
+      "allows_withdrawal": true,
+      "allows_deposit": true,
+      "manufacturer": "NCR",
+      "model": "SelfServ 80",
+      "serial_number": "NCR-80-2025-009",
+      "installation_date": "2025-12-08",
+      "last_maintenance": "2026-01-16",
+      "created_at": "2026-01-08T10:00:00Z",
+      "updated_at": "2026-01-16T10:00:00Z"
+    },
+    {
+      "atm_id": 10,
+      "branch_id": 15,
+      "location_id": 21,
+      "atm_code": "NBE-HEL-ATM-001",
+      "isActive": true,
+      "allows_withdrawal": true,
+      "allows_deposit": true,
+      "manufacturer": "NCR",
+      "model": "SelfServ 90",
+      "serial_number": "NCR-90-2025-010",
+      "installation_date": "2025-12-12",
+      "last_maintenance": "2026-01-20",
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-20T10:00:00Z"
+    },
+    {
+      "atm_id": 11,
+      "branch_id": 15,
+      "location_id": 21,
+      "atm_code": "NBE-HEL-ATM-002",
+      "isActive": true,
+      "allows_withdrawal": true,
+      "allows_deposit": false,
+      "manufacturer": "Diebold Nixdorf",
+      "model": "DN Series",
+      "serial_number": "DN-2025-011",
+      "installation_date": "2025-11-28",
+      "last_maintenance": "2026-01-11",
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-11T10:00:00Z"
+    },
+    {
+      "atm_id": 12,
+      "branch_id": 24,
+      "location_id": 1,
+      "atm_code": "BM-TAH-ATM-001",
+      "isActive": true,
+      "allows_withdrawal": true,
+      "allows_deposit": true,
+      "manufacturer": "NCR",
+      "model": "SelfServ 80",
+      "serial_number": "NCR-80-2025-012",
+      "installation_date": "2025-12-03",
+      "last_maintenance": "2026-01-17",
+      "created_at": "2026-01-07T10:00:00Z",
+      "updated_at": "2026-01-17T10:00:00Z"
+    }
+  ],
+  "atmDenominationStock": [
+    {
+      "atm_id": 1,
+      "denomination_id": 1,
+      "count": 1000
+    },
+    {
+      "atm_id": 1,
+      "denomination_id": 2,
+      "count": 500
+    },
+    {
+      "atm_id": 1,
+      "denomination_id": 3,
+      "count": 300
+    },
+    {
+      "atm_id": 1,
+      "denomination_id": 4,
+      "count": 200
+    },
+    {
+      "atm_id": 2,
+      "denomination_id": 2,
+      "count": 800
+    },
+    {
+      "atm_id": 2,
+      "denomination_id": 3,
+      "count": 400
+    },
+    {
+      "atm_id": 2,
+      "denomination_id": 4,
+      "count": 250
+    },
+    {
+      "atm_id": 3,
+      "denomination_id": 1,
+      "count": 1200
+    },
+    {
+      "atm_id": 3,
+      "denomination_id": 2,
+      "count": 600
+    },
+    {
+      "atm_id": 3,
+      "denomination_id": 3,
+      "count": 350
+    },
+    {
+      "atm_id": 3,
+      "denomination_id": 5,
+      "count": 150
+    }
+  ],
+  "viewType": [
+    {
+      "type_id": 1,
+      "type_name": "Front View"
+    },
+    {
+      "type_id": 2,
+      "type_name": "Side View"
+    },
+    {
+      "type_id": 3,
+      "type_name": "Queue View"
+    }
+  ],
+  "viewTarget": [
+    {
+      "target_id": 1,
+      "type_id": 1,
+      "target_name": "ATM Screen"
+    },
+    {
+      "target_id": 2,
+      "type_id": 2,
+      "target_name": "ATM Side Panel"
+    },
+    {
+      "target_id": 3,
+      "type_id": 3,
+      "target_name": "Queue Area"
+    }
+  ],
+  "cameraConfiguration": [
+    {
+      "camera_config_id": 1,
+      "branch_id": 13,
+      "username": "admin",
+      "password_hash": "$2b$10$hashed_password",
+      "ipAddress": "192.168.1.100",
+      "isActive": true,
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-06T10:00:00Z"
+    },
+    {
+      "camera_config_id": 2,
+      "branch_id": 14,
+      "username": "admin",
+      "password_hash": "$2b$10$hashed_password2",
+      "ipAddress": "192.168.1.101",
+      "isActive": true,
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-06T10:00:00Z"
+    },
+    {
+      "camera_config_id": 3,
+      "branch_id": 21,
+      "username": "admin",
+      "password_hash": "$2b$10$hashed_password3",
+      "ipAddress": "192.168.1.102",
+      "isActive": true,
+      "created_at": "2026-01-07T10:00:00Z",
+      "updated_at": "2026-01-07T10:00:00Z"
+    }
+  ],
+  "cameraView": [
+    {
+      "camera_view_id": 1,
+      "camera_config_id": 1,
+      "target_id": 1,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.1.100:554/stream1",
+      "waitingPeopleCount": 3
+    },
+    {
+      "camera_view_id": 2,
+      "camera_config_id": 1,
+      "target_id": 3,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.1.100:554/stream2",
+      "waitingPeopleCount": 5
+    },
+    {
+      "camera_view_id": 3,
+      "camera_config_id": 2,
+      "target_id": 1,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.1.101:554/stream1",
+      "waitingPeopleCount": 2
+    }
+  ],
+  "logCategory": [
+    {
+      "category_id": 1,
+      "category_name": "Authentication",
+      "category_description": "Login, logout, and authentication-related events"
+    },
+    {
+      "category_id": 2,
+      "category_name": "System",
+      "category_description": "System-level operations and changes"
+    },
+    {
+      "category_id": 3,
+      "category_name": "ATM Operations",
+      "category_description": "ATM-related activities"
+    },
+    {
+      "category_id": 4,
+      "category_name": "Data Modification",
+      "category_description": "Create, update, delete operations"
+    },
+    {
+      "category_id": 5,
+      "category_name": "Security",
+      "category_description": "Security events and alerts"
+    },
+    {
+      "category_id": 6,
+      "category_name": "Camera",
+      "category_description": "Camera and surveillance events"
+    }
+  ],
+  "logLevel": [
+    {
+      "level_id": 1,
+      "level_name": "INFO",
+      "level_color": "#36e27b"
+    },
+    {
+      "level_id": 2,
+      "level_name": "WARNING",
+      "level_color": "#fbbf24"
+    },
+    {
+      "level_id": 3,
+      "level_name": "ERROR",
+      "level_color": "#ef4444"
+    },
+    {
+      "level_id": 4,
+      "level_name": "CRITICAL",
+      "level_color": "#dc2626"
+    },
+    {
+      "level_id": 5,
+      "level_name": "DEBUG",
+      "level_color": "#3b82f6"
+    }
+  ],
+  "systemLogs": [
+    {
+      "log_id": 1,
+      "user_id": 1,
+      "category_id": 1,
+      "level_id": 1,
+      "action": "User Login",
+      "description": "Civil Registry Admin logged in successfully",
+      "ip_address": "197.34.56.78",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "metadata": {
+        "session_id": "sess_12345",
+        "device_type": "desktop",
+        "org_id": 1
+      },
+      "timestamp": "2026-02-02T09:15:23Z"
+    },
+    {
+      "log_id": 2,
+      "user_id": 2,
+      "category_id": 1,
+      "level_id": 1,
+      "action": "User Login",
+      "description": "NBE Admin logged in successfully",
+      "ip_address": "197.34.56.79",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "metadata": {
+        "session_id": "sess_12346",
+        "device_type": "desktop",
+        "org_id": 2
+      },
+      "timestamp": "2026-02-02T09:20:15Z"
+    },
+    {
+      "log_id": 3,
+      "user_id": 1,
+      "category_id": 4,
+      "level_id": 1,
+      "action": "Branch Created",
+      "description": "New civil registry branch created: Tahrir",
+      "ip_address": "197.34.56.78",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "metadata": {
+        "branch_id": 1,
+        "branch_code": "ECR-CAI-001",
+        "org_id": 1
+      },
+      "timestamp": "2026-02-02T09:25:45Z"
+    },
+    {
+      "log_id": 4,
+      "user_id": 2,
+      "category_id": 3,
+      "level_id": 2,
+      "action": "ATM Low Cash Warning",
+      "description": "ATM NBE-TAH-ATM-001 cash level below 20%",
+      "ip_address": "192.168.1.100",
+      "user_agent": "ATM System/1.0",
+      "metadata": {
+        "atm_id": 1,
+        "cash_level_percentage": 18,
+        "total_amount": 45000,
+        "org_id": 2,
+        "branch_id": 13
+      },
+      "timestamp": "2026-02-02T10:30:12Z"
+    },
+    {
+      "log_id": 5,
+      "user_id": null,
+      "category_id": 5,
+      "level_id": 3,
+      "action": "Failed Login Attempt",
+      "description": "Multiple failed login attempts detected",
+      "ip_address": "203.45.67.89",
+      "user_agent": "Mozilla/5.0 (Linux; Android 10)",
+      "metadata": {
+        "attempt_count": 5,
+        "target_email": "admin@example.com"
+      },
+      "timestamp": "2026-02-02T11:45:33Z"
+    },
+    {
+      "log_id": 6,
+      "user_id": 2,
+      "category_id": 4,
+      "level_id": 1,
+      "action": "ATM Updated",
+      "description": "ATM configuration updated for NBE-TAH-ATM-001",
+      "ip_address": "197.34.56.79",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "metadata": {
+        "atm_id": 1,
+        "org_id": 2,
+        "branch_id": 13,
+        "changes": {
+          "allows_deposit": true,
+          "last_maintenance": "2026-02-01"
+        }
+      },
+      "timestamp": "2026-02-02T12:15:00Z"
+    },
+    {
+      "log_id": 7,
+      "user_id": 8,
+      "category_id": 6,
+      "level_id": 2,
+      "action": "Camera Offline",
+      "description": "Camera view disconnected at NBE Tahrir branch",
+      "ip_address": "192.168.1.100",
+      "user_agent": "Camera System/2.0",
+      "metadata": {
+        "camera_view_id": 1,
+        "org_id": 2,
+        "branch_id": 13,
+        "last_frame_time": "2026-02-02T13:22:15Z"
+      },
+      "timestamp": "2026-02-02T13:25:45Z"
+    },
+    {
+      "log_id": 8,
+      "user_id": 12,
+      "category_id": 1,
+      "level_id": 1,
+      "action": "Branch Manager Login",
+      "description": "Mansoura branch manager logged in",
+      "ip_address": "197.45.67.90",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "metadata": {
+        "session_id": "sess_12347",
+        "device_type": "desktop",
+        "org_id": 1,
+        "branch_id": 7
+      },
+      "timestamp": "2026-02-02T08:30:12Z"
+    },
+    {
+      "log_id": 9,
+      "user_id": 12,
+      "category_id": 4,
+      "level_id": 1,
+      "action": "Service Status Updated",
+      "description": "Marriage Certificate service activated at Mansoura branch",
+      "ip_address": "197.45.67.90",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "metadata": {
+        "branch_id": 7,
+        "service_id": 5,
+        "org_id": 1,
+        "previous_status": false,
+        "new_status": true
+      },
+      "timestamp": "2026-02-02T09:15:45Z"
+    }
+  ]
+}

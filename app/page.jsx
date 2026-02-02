@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+// import Link from "next/link";
 import OrganizationSelector from "@/components/screens/OrganizationSelector/OrganizationSelector";
 import BranchSelector from "@/components/screens/BranchSelector/BranchSelector";
 import ServiceTypeSelector from "@/components/screens/ServiceTypeSelector/ServiceTypeSelector";
@@ -9,8 +10,9 @@ import BranchDetailsList from "@/components/screens/BranchDetailsList/BranchDeta
 import ATMDetailsScreen from "@/components/screens/ATMDetailsScreen/ATMDetailsScreen";
 import ServiceBranchDetailsScreen from "@/components/screens/ServiceBranchDetailsScreen/ServiceBranchDetailsScreen";
 import BankTypeSelector from "@/components/screens/BankTypeSelector/BankTypeSelector";
-
 import SplashScreen from "@/components/SplashScreen";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const translations = {
   en: {
@@ -33,6 +35,9 @@ const translations = {
     selectBankType: "Select Bank Type",
     selectATM: "Select ATM",
     orChooseOtherService: "Or Choose Another Service",
+    adminLogin: "Admin Login",
+    signupOrg: "Sign up as Organization",
+    menu: "Menu",
   },
   ar: {
     serviceTitle: "اختر الخدمة",
@@ -54,8 +59,12 @@ const translations = {
     selectBankType: "اختر نوع البنك",
     selectATM: "اختر ماكينة الصراف",
     orChooseOtherService: "أو اختر خدمة أخرى",
+    adminLogin: "تسجيل دخول المسؤولين",
+    signupOrg: "التسجيل كمؤسسة",
+    menu: "القائمة",
   },
 };
+
 const mockOrganizations = [
   // البنوك الحكومية
   {
@@ -363,7 +372,6 @@ const mockOrganizations = [
 
 const mockATMs = {
   2001: [
-    // البنك الأهلي المصري
     {
       atm_id: 5001,
       name_ar: "فرع ميدان التحرير",
@@ -486,7 +494,6 @@ const mockATMs = {
     },
   ],
   2002: [
-    // بنك مصر
     {
       atm_id: 5011,
       name_ar: "فرع رمسيس",
@@ -609,7 +616,6 @@ const mockATMs = {
     },
   ],
   2003: [
-    // البنك الزراعي
     {
       atm_id: 5021,
       name_ar: "فرع شارع الجمهورية",
@@ -732,7 +738,6 @@ const mockATMs = {
     },
   ],
   2004: [
-    // بنك القاهرة
     {
       atm_id: 5031,
       name_ar: "فرع وسط البلد",
@@ -855,7 +860,6 @@ const mockATMs = {
     },
   ],
   2005: [
-    // بنك الإسكندرية
     {
       atm_id: 5041,
       name_ar: "فرع ميدان طلعت حرب",
@@ -978,7 +982,6 @@ const mockATMs = {
     },
   ],
   2006: [
-    // CIB
     {
       atm_id: 5051,
       name_ar: "فرع المقطم",
@@ -1101,7 +1104,6 @@ const mockATMs = {
     },
   ],
   2007: [
-    // فيصل الإسلامي
     {
       atm_id: 5061,
       name_ar: "فرع الدقي الرئيسي",
@@ -1224,7 +1226,6 @@ const mockATMs = {
     },
   ],
   2008: [
-    // QNB
     {
       atm_id: 5071,
       name_ar: "فرع نايل سيتي",
@@ -1347,7 +1348,6 @@ const mockATMs = {
     },
   ],
   2009: [
-    // كريدي أجريكول
     {
       atm_id: 5081,
       name_ar: "فرع شارع 9",
@@ -1470,7 +1470,6 @@ const mockATMs = {
     },
   ],
   2010: [
-    // Emirates NBD
     {
       atm_id: 5091,
       name_ar: "فرع صن سيتي مول",
@@ -1712,87 +1711,6 @@ const mockServices = [
   },
 ];
 
-// const mockServices = [
-//   {
-//     service_id: 11,
-//     name_ar: "البنوك",
-//     name_en: "Banks",
-//     type: "bank",
-//     org_image: "../assets/images/Banks.webp",
-//   },
-//   {
-//     service_id: 7,
-//     name_ar: "الأحوال المدنية",
-//     name_en: "Civil Status",
-//     type: "civil_status",
-//     org_image: "../assets/images/Civil_Registry.jpg",
-//   },
-// {
-//   service_id: 1,
-//   name_ar: "المستشفيات",
-//   name_en: "Hospitals",
-//   type: "hospital",
-//   org_image:"",
-// },
-// {
-//   service_id: 2,
-//   name_ar: "مكاتب البريد",
-//   name_en: "Post Offices",
-//   type: "post_office",
-//   org_image:"",
-// },
-// {
-//   service_id: 3,
-//   name_ar: "مراكز الاتصالات",
-//   name_en: "Telecom Centers",
-//   type: "telecom",
-//   org_image:"",
-// },
-// {
-//   service_id: 4,
-//   name_ar: "إدارة المرور",
-//   name_en: "Traffic Department",
-//   type: "traffic",
-//   org_image:"",
-// },
-// {
-//   service_id: 5,
-//   name_ar: "مكاتب العقارات",
-//   name_en: "Real Estate",
-//   type: "real_estate",
-//   org_image:"",
-// },
-// {
-//   service_id: 6,
-//   name_ar: "التأمين الصحي",
-//   name_en: "Health Insurance",
-//   type: "health_insurance",
-//   org_image:"",
-// },
-
-// {
-//   service_id: 8,
-//   name_ar: "مكاتب الهجرة",
-//   name_en: "Immigration",
-//   type: "immigration",
-//   org_image:"",
-// },
-// {
-//   service_id: 9,
-//   name_ar: "محطات الوقود",
-//   name_en: "Gas Stations",
-//   type: "gas_station",
-//   org_image:"",
-// },
-// {
-//   service_id: 10,
-//   name_ar: "مكاتب الجوازات",
-//   name_en: "Passport Office",
-//   type: "passport",
-//   org_image:"",
-// },
-// ];
-
 export default function Home() {
   const [showSplash, setShowSplash] = useState(true);
   const [screen, setScreen] = useState("service-selector");
@@ -1803,6 +1721,7 @@ export default function Home() {
   const [selectedBranch, setSelectedBranch] = useState(null);
   const [selectedATM, setSelectedATM] = useState(null);
   const [selectedService, setSelectedService] = useState(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [userLocation, setUserLocation] = useState({
     latitude: 30.0444,
     longitude: 31.2357,
@@ -1829,22 +1748,11 @@ export default function Home() {
     }
   };
 
-  // lash
-
-  // const handleSelectOrganization = (org) => {
-  //   setSelectedOrganization(org);
-  //   const branches = mockBranches[org.org_id] || [];
-  //   if (branches.length > 0) {
-  //     setSelectedBranch(branches[0]);
-  //     setScreen("atm-list");
-  //   }
-  // };
-
   const handleSelectOrganization = (org) => {
     setSelectedOrganization(org);
     console.log("Selected Org:", org);
     console.log("ATMs for this org:", mockATMs[org.org_id]);
-    setSelectedBranch(org); // ✅ احفظ الـ organization نفسها
+    setSelectedBranch(org);
     setScreen("atm-list");
   };
 
@@ -1895,15 +1803,11 @@ export default function Home() {
       className="min-h-screen p-4 transition-colors duration-300"
     >
       {showSplash && <SplashScreen onFinish={() => setShowSplash(false)} />}
+
+      {/* Navbar */}
       <div className="flex justify-between items-center mb-8 max-w-6xl mx-auto main-shadow p-2 border-15">
-        <div className="flex gap-3">
-          {/* <h1 style={{ color: "#36e27b" }} className="text-3xl font-bold">
-            {language === "ar" ? "خدمات" : "Services"}
-          </h1> */}
-          <div
-            className="navbar-brand  ms-0 d-flex justify-content-baseline "
-            href="#"
-          ></div>
+        {/* Left side - Desktop buttons
+        <div className="hidden md:flex gap-3">
           <button
             onClick={() => setDarkMode(!darkMode)}
             style={{
@@ -1925,7 +1829,113 @@ export default function Home() {
           >
             {language === "ar" ? "English" : "العربية"}
           </button>
+          <Link href="/features/auth/admin-login">
+            <button
+              style={{
+                backgroundColor: "#36e27b",
+                color: "#111714",
+              }}
+              className="px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition"
+            >
+              {t.adminLogin}
+            </button>
+          </Link>
+          <Link href="/features/auth/signup">
+            <button
+              style={{
+                backgroundColor: "#36e27b",
+                color: "#111714",
+              }}
+              className="px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition"
+            >
+              {t.signupOrg}
+            </button>
+          </Link>
+        </div> */}
+
+        {/* Mobile menu button */}
+        {/* <div className="md:hidden">
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            style={{
+              backgroundColor: "#36e27b",
+              color: "#111714",
+            }}
+            className="px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition"
+          >
+            {t.menu} ☰
+          </button>
+        </div> */}
+
+        {/* Left side - Desktop buttons */}
+        <div className="hidden md:flex gap-3">
+          {/* Dark Mode Toggle */}
+          <button
+            onClick={() => setDarkMode(!darkMode)}
+            style={{
+              backgroundColor: darkMode ? "#36e27b" : "#e8f4f8",
+              color: darkMode ? "#111714" : "#36e27b",
+            }}
+            className="px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition"
+            title={darkMode ? "Light Mode" : "Dark Mode"}
+          >
+            {darkMode ? "☀️" : "🌙"}
+          </button>
+
+          {/* Language Toggle */}
+          <button
+            onClick={() => setLanguage(language === "ar" ? "en" : "ar")}
+            style={{
+              backgroundColor: "#36e27b",
+              color: "#111714",
+            }}
+            className="px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition"
+          >
+            {language === "ar" ? "English" : "العربية"}
+          </button>
+
+          {/* Admin Login */}
+          <Link href="/features/auth/admin-login" passHref>
+            <button
+              style={{
+                backgroundColor: "#36e27b",
+                color: "#111714",
+              }}
+              className="px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition"
+            >
+              {t.adminLogin}
+            </button>
+          </Link>
+
+          {/* Sign Up */}
+          <Link href="/features/auth/signup" passHref>
+            <button
+              style={{
+                backgroundColor: "#36e27b",
+                color: "#111714",
+              }}
+              className="px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition"
+            >
+              {t.signupOrg}
+            </button>
+          </Link>
         </div>
+
+        {/* Mobile menu button */}
+        <div className="md:hidden">
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            style={{
+              backgroundColor: "#36e27b",
+              color: "#111714",
+            }}
+            className="px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition"
+          >
+            {t.menu} ☰
+          </button>
+        </div>
+
+        {/* Right side - Logo */}
         <div className="d-flex">
           <span
             className="Logo-Title mt-2"
@@ -1937,7 +1947,6 @@ export default function Home() {
             className="rounded-circle me-2"
             style={{ backgroundColor: !darkMode ? "#36e27b" : "white" }}
           >
-            {" "}
             <img
               src="/logo-removebg-preview.png"
               alt="logo"
@@ -1947,6 +1956,69 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Mobile dropdown menu */}
+      {mobileMenuOpen && (
+        <div
+          className="md:hidden mb-4 p-4 rounded-lg max-w-6xl mx-auto"
+          style={{
+            backgroundColor: darkMode ? "#1a1a1a" : "#f5f5f5",
+          }}
+        >
+          <div className="flex flex-col gap-3">
+            <button
+              onClick={() => {
+                setDarkMode(!darkMode);
+                setMobileMenuOpen(false);
+              }}
+              style={{
+                backgroundColor: darkMode ? "#36e27b" : "#e8f4f8",
+                color: darkMode ? "#111714" : "#36e27b",
+              }}
+              className="px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition"
+            >
+              {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+            </button>
+            <button
+              onClick={() => {
+                setLanguage(language === "ar" ? "en" : "ar");
+                setMobileMenuOpen(false);
+              }}
+              style={{
+                backgroundColor: "#36e27b",
+                color: "#111714",
+              }}
+              className="px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition"
+            >
+              {language === "ar" ? "English" : "العربية"}
+            </button>
+            <Link href="/features/auth/admin-login">
+              <button
+                onClick={() => setMobileMenuOpen(false)}
+                style={{
+                  backgroundColor: "#36e27b",
+                  color: "#111714",
+                }}
+                className="w-full px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition"
+              >
+                {t.adminLogin}
+              </button>
+            </Link>
+            <Link href="/features/auth/signup">
+              <button
+                onClick={() => setMobileMenuOpen(false)}
+                style={{
+                  backgroundColor: "#36e27b",
+                  color: "#111714",
+                }}
+                className="w-full px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition"
+              >
+                {t.signupOrg}
+              </button>
+            </Link>
+          </div>
+        </div>
+      )}
 
       {screen === "service-selector" && (
         <ServiceTypeSelector
@@ -1964,7 +2036,7 @@ export default function Home() {
             <button
               onClick={handleBackClick}
               style={{ color: "#36e27b" }}
-              className=" mb-6 flex items-center gap-2 text-lg font-semibold hover:opacity-80 transition"
+              className="mb-6 flex items-center gap-2 text-lg font-semibold hover:opacity-80 transition"
             >
               {language === "ar" ? "← رجوع" : "Back →"}
             </button>
@@ -1989,19 +2061,9 @@ export default function Home() {
             {language === "ar" ? "← رجوع" : "Back →"}
           </button>
 
-          {/* <ATMList
-            atms={mockATMs[selectedBranch.branch_id] || []}
-            branchName={getBranchName(selectedBranch)}
-            onSelectATM={handleSelectATM}
-            userLocation={userLocation}
-            language={language}
-            getATMName={getATMName}
-            darkMode={darkMode}
-          /> */}
-
           <ATMList
-            atms={mockATMs[selectedOrganization.org_id] || []} // ✅ استخدم selectedOrganization
-            branchName={getOrgName(selectedOrganization)} // ✅ استخدم getOrgName بدل getBranchName
+            atms={mockATMs[selectedOrganization.org_id] || []}
+            branchName={getOrgName(selectedOrganization)}
             onSelectATM={handleSelectATM}
             userLocation={userLocation}
             language={language}
@@ -2016,7 +2078,7 @@ export default function Home() {
           <button
             onClick={handleBackClick}
             style={{ color: "#36e27b" }}
-            className="mb-6 flex items-center gap-2 text-lg font-semibold hover:opacity-80 transition "
+            className="mb-6 flex items-center gap-2 text-lg font-semibold hover:opacity-80 transition"
           >
             {language === "ar" ? "← رجوع" : "Back →"}
           </button>
