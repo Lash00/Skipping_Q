@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -95,9 +94,10 @@ export default function ATMDetailsScreen({
           style={{ color: darkMode ? "#ffffff" : "#1f2937" }}
           className="text-4xl font-bold mb-2"
         >
-          {language === "ar" ? "تفاصيل ماكينة الصراف" : "ATM Details"}
+          {/* {language === "ar" ? "تفاصيل ماكينة الصراف" : "ATM Details"} */}
+          {getATMName(atm)}
         </h1>
-        <p style={{ color: "#6b7280" }} className="text-lg">
+        <p style={{ color: "red" }} className="text-lg">
           {branchName}
         </p>
       </div>
@@ -176,7 +176,7 @@ export default function ATMDetailsScreen({
               </div>
             )}
 
-            <button
+            {/* <button
               onClick={handleProceed}
               disabled={validationStatus !== "success"}
               style={{
@@ -196,6 +196,7 @@ export default function ATMDetailsScreen({
             >
               {language === "ar" ? "المتابعة للسحب" : "Proceed to Withdrawal"}
             </button>
+          */}
           </div>
         </div>
 
@@ -215,7 +216,32 @@ export default function ATMDetailsScreen({
                 style={{ color: darkMode ? "#ffffff" : "#1f2937" }}
                 className="text-xl font-bold"
               >
-                {getATMName(atm)}
+                <div
+                  style={
+                    {
+                      // borderTop: "1px solid #e5e7eb",
+                      // paddingTop: "16px",
+                    }
+                  }
+                >
+                  <div className="flex items-center gap-3 mb-2">
+                    {/* <span style={{ fontSize: "24px" }}>👥</span> */}
+                    <div>
+                      <p
+                        style={{
+                          color: "red",
+                          fontSize: "1.5rem",
+                          fontWeight: "bolder",
+                        }}
+                      >
+                        {atm.queue}{" "}
+                        {language === "ar"
+                          ? "أشخاص في الانتظار"
+                          : "people waiting"}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </h2>
               <StatusBadge isActive={atm.isActive} language={language} />
             </div>
@@ -296,7 +322,7 @@ export default function ATMDetailsScreen({
             </div>
 
             {/* Queue Info */}
-            <div
+            {/* <div
               style={{
                 borderTop: "1px solid #e5e7eb",
                 paddingTop: "16px",
@@ -322,7 +348,7 @@ export default function ATMDetailsScreen({
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

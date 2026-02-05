@@ -216,32 +216,41 @@ export default function ServiceBranchDetailsScreen({
                       {service.name}
                     </h3>
 
-                    <div className="flex items-center gap-4 text-sm text-gray-600 mt-3">
-                      <div className="flex items-center gap-1">
-                        <span>👥</span>
-                        <span className="font-medium">
+                    <div className="items-center gap-4 text-sm text-gray-600 mt-3">
+                      <div
+                        className="flex items-center gap-1 "
+                        style={{ color: "red", fontSize: "1.7rem" }}
+                      >
+                        {/* <span>👥</span> */}
+                        <span className="font-larg ">
                           {service.available ? service.waiting : 0}
                         </span>
                         <span>
                           {language === "ar" ? "في الانتظار" : "waiting"}
                         </span>
                       </div>
-                      {/* <div className="flex items-center gap-1">
-                        <span>⏱️</span>
-                        <span className="font-medium">
-                          {service.estimatedTime}
+                      <div
+                        className="flex items-center gap-1"
+                        style={{ fontSize: "1.3rem" }}
+                      >
+                        {/* <span>👥</span> */}
+                        <span className="font-larg">
+                          {service.available ? service.windowRange : "closed"}
                         </span>
-                      </div> */}
+                        <span>
+                          {language === "ar" ? "شباك رقم " : "window"}
+                        </span>
+                      </div>
                     </div>
                   </div>
 
                   {service.available ? (
                     <div className="flex items-center justify-center w-8 h-8 bg-green-500 rounded-full">
-                      <span className="text-white text-lg">✓</span>
+                      {/* <span className="text-white text-lg">✓</span> */}
                     </div>
                   ) : (
                     <div className="flex items-center justify-center w-8 h-8 bg-orange-500 rounded-full">
-                      <span className="text-white text-lg">⚠</span>
+                      {/* <span className="text-white text-lg">⚠</span> */}
                     </div>
                   )}
                 </div>

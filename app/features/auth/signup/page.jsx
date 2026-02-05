@@ -15,6 +15,7 @@ export default function SignupOrganization() {
     org_social_link: "",
     latitude: "",
     longitude: "",
+    governorate: "",
     org_picture: null,
   });
   const [darkMode, setDarkMode] = useState(false);
@@ -86,8 +87,14 @@ export default function SignupOrganization() {
     formDataToSend.append("email", formData.email);
     formDataToSend.append("org_social_link", formData.org_social_link);
     formDataToSend.append("org_description", formData.org_description);
-    formDataToSend.append("latitude", formData.latitude);
-    formDataToSend.append("longitude", formData.longitude);
+
+    // إرسال الـ location كـ object
+    const location = {
+      latitude: formData.latitude,
+      longitude: formData.longitude,
+      governorate: formData.governorate,
+    };
+    formDataToSend.append("location", JSON.stringify(location));
 
     if (formData.org_picture) {
       formDataToSend.append("org_picture", formData.org_picture);
@@ -218,25 +225,20 @@ export default function SignupOrganization() {
           <div className="relative w-full h-72 overflow-hidden">
             {/* Background Pattern */}
             <div
-              className="absolute inset-0"
+              className="absolute inset-0 logo-background"
               style={{
-                background: previewImage
+                backgroundImage: previewImage
                   ? `linear-gradient(to bottom, ${darkMode ? "rgba(10, 15, 13, 0.3)" : "rgba(255, 255, 255, 0.3)"} 0%, ${darkMode ? "rgba(10, 15, 13, 0.7)" : "rgba(255, 255, 255, 0.7)"} 100%), url(${previewImage})`
                   : darkMode
                     ? "linear-gradient(135deg, #1a2e23 0%, #0a0f0d 50%, #1e3a2e 100%)"
                     : "linear-gradient(135deg, #e8f5e9 0%, #f5f7fa 50%, #e0f2e9 100%)",
-                backgroundSize: "cover !important",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
               }}
             >
               {/* Decorative Pattern Overlay */}
               <div
-                className="absolute inset-0 opacity-10"
+                className="absolute inset-0 opacity-10 pattern-overlay"
                 style={{
                   backgroundImage: `radial-gradient(circle at 2px 2px, ${darkMode ? "#36e27b" : "#1e9e5a"} 1px, transparent 0)`,
-                  backgroundSize: "cover !important",
-                  backgroundRepeat: "no-repeat !important",
                 }}
               />
             </div>
@@ -567,85 +569,42 @@ export default function SignupOrganization() {
                   </button>
                 </div>
 
-                {/* Latitude and Longitude Inputs */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {/* Latitude */}
-                  <div>
-                    <label
-                      className="block mb-2 font-semibold text-xs tracking-wide"
-                      style={{
-                        color: darkMode ? "#a0a0a0" : "#666666",
-                      }}
-                    >
-                      Latitude
-                    </label>
-                    <input
-                      type="text"
-                      name="latitude"
-                      value={formData.latitude}
-                      onChange={handleChange}
-                      onFocus={() => handleFocus("latitude")}
-                      onBlur={() => handleBlur("latitude")}
-                      required
-                      placeholder="e.g., 30.0444"
-                      className="w-full px-5 py-3 rounded-xl border-2 transition-all duration-300 focus:outline-none font-medium shadow-sm"
-                      style={{
-                        backgroundColor: darkMode
-                          ? "rgba(15, 22, 18, 0.8)"
-                          : "#ffffff",
-                        borderColor: isFocused.latitude
-                          ? "#36e27b"
-                          : darkMode
-                            ? "rgba(54, 226, 123, 0.25)"
-                            : "rgba(54, 226, 123, 0.3)",
-                        color: darkMode ? "#ffffff" : "#111714",
-                        boxShadow: isFocused.latitude
-                          ? "0 0 0 3px rgba(54, 226, 123, 0.2), 0 4px 12px rgba(54, 226, 123, 0.15)"
-                          : darkMode
-                            ? "0 2px 8px rgba(0, 0, 0, 0.3)"
-                            : "0 2px 8px rgba(0, 0, 0, 0.05)",
-                      }}
-                    />
-                  </div>
-
-                  {/* Longitude */}
-                  <div>
-                    <label
-                      className="block mb-2 font-semibold text-xs tracking-wide"
-                      style={{
-                        color: darkMode ? "#a0a0a0" : "#666666",
-                      }}
-                    >
-                      Longitude
-                    </label>
-                    <input
-                      type="text"
-                      name="longitude"
-                      value={formData.longitude}
-                      onChange={handleChange}
-                      onFocus={() => handleFocus("longitude")}
-                      onBlur={() => handleBlur("longitude")}
-                      required
-                      placeholder="e.g., 31.2357"
-                      className="w-full px-5 py-3 rounded-xl border-2 transition-all duration-300 focus:outline-none font-medium shadow-sm"
-                      style={{
-                        backgroundColor: darkMode
-                          ? "rgba(15, 22, 18, 0.8)"
-                          : "#ffffff",
-                        borderColor: isFocused.longitude
-                          ? "#36e27b"
-                          : darkMode
-                            ? "rgba(54, 226, 123, 0.25)"
-                            : "rgba(54, 226, 123, 0.3)",
-                        color: darkMode ? "#ffffff" : "#111714",
-                        boxShadow: isFocused.longitude
-                          ? "0 0 0 3px rgba(54, 226, 123, 0.2), 0 4px 12px rgba(54, 226, 123, 0.15)"
-                          : darkMode
-                            ? "0 2px 8px rgba(0, 0, 0, 0.3)"
-                            : "0 2px 8px rgba(0, 0, 0, 0.05)",
-                      }}
-                    />
-                  </div>
+                {/* Governorate Input - محافظة */}
+                <div>
+                  <label
+                    className="flex items-center gap-2 mb-3 font-bold text-sm tracking-wider"
+                    style={{ color: darkMode ? "#36e27b" : "#1e9e5a" }}
+                  >
+                    <span className="text-lg">🏙️</span>
+                    Governorate / المحافظة *
+                  </label>
+                  <input
+                    type="text"
+                    name="governorate"
+                    value={formData.governorate}
+                    onChange={handleChange}
+                    onFocus={() => handleFocus("governorate")}
+                    onBlur={() => handleBlur("governorate")}
+                    required
+                    placeholder="e.g., Cairo, القاهرة"
+                    className="w-full px-5 py-4 rounded-xl border-2 transition-all duration-300 focus:outline-none font-medium shadow-sm"
+                    style={{
+                      backgroundColor: darkMode
+                        ? "rgba(15, 22, 18, 0.8)"
+                        : "#ffffff",
+                      borderColor: isFocused.governorate
+                        ? "#36e27b"
+                        : darkMode
+                          ? "rgba(54, 226, 123, 0.25)"
+                          : "rgba(54, 226, 123, 0.3)",
+                      color: darkMode ? "#ffffff" : "#111714",
+                      boxShadow: isFocused.governorate
+                        ? "0 0 0 3px rgba(54, 226, 123, 0.2), 0 4px 12px rgba(54, 226, 123, 0.15)"
+                        : darkMode
+                          ? "0 2px 8px rgba(0, 0, 0, 0.3)"
+                          : "0 2px 8px rgba(0, 0, 0, 0.05)",
+                    }}
+                  />
                 </div>
               </div>
 
@@ -765,6 +724,17 @@ export default function SignupOrganization() {
 
         * {
           font-family: "Poppins", sans-serif;
+        }
+
+        .logo-background {
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        .pattern-overlay {
+          background-size: 40px 40px;
+          background-repeat: repeat;
         }
       `}</style>
     </div>

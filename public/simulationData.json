@@ -1731,6 +1731,228 @@
       "updated_at": "2026-01-07T10:00:00Z"
     }
   ],
+  "cameraConfiguration": [
+    {
+      "camera_config_id": 1,
+      "branch_id": 1,
+      "username": "admin_ecr_tahrir",
+      "password_hash": "$2b$10$cam1_ecr_tahrir_hash",
+      "ipAddress": "192.168.1.10",
+      "isActive": true,
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-25T14:30:00Z"
+    },
+    {
+      "camera_config_id": 2,
+      "branch_id": 2,
+      "username": "admin_ecr_nasr",
+      "password_hash": "$2b$10$cam2_ecr_nasr_hash",
+      "ipAddress": "192.168.1.11",
+      "isActive": true,
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-20T11:00:00Z"
+    },
+    {
+      "camera_config_id": 3,
+      "branch_id": 3,
+      "username": "admin_ecr_dokki",
+      "password_hash": "$2b$10$cam3_ecr_dokki_hash",
+      "ipAddress": "192.168.1.12",
+      "isActive": true,
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-22T09:15:00Z"
+    },
+    {
+      "camera_config_id": 4,
+      "branch_id": 5,
+      "username": "admin_ecr_smouha",
+      "password_hash": "$2b$10$cam4_ecr_smouha_hash",
+      "ipAddress": "192.168.1.13",
+      "isActive": true,
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-18T16:45:00Z"
+    },
+    {
+      "camera_config_id": 5,
+      "branch_id": 7,
+      "username": "admin_ecr_mansoura",
+      "password_hash": "$2b$10$cam5_ecr_mansoura_hash",
+      "ipAddress": "192.168.1.14",
+      "isActive": true,
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-21T13:20:00Z"
+    },
+    {
+      "camera_config_id": 6,
+      "branch_id": 9,
+      "username": "admin_ecr_heliopolis",
+      "password_hash": "$2b$10$cam6_ecr_heliopolis_hash",
+      "ipAddress": "192.168.1.15",
+      "isActive": true,
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-23T10:30:00Z"
+    },
+    {
+      "camera_config_id": 7,
+      "branch_id": 10,
+      "username": "admin_ecr_maadi",
+      "password_hash": "$2b$10$cam7_ecr_maadi_hash",
+      "ipAddress": "192.168.1.16",
+      "isActive": true,
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-19T15:00:00Z"
+    },
+    {
+      "camera_config_id": 8,
+      "branch_id": 13,
+      "username": "admin_nbe_tahrir",
+      "password_hash": "$2b$10$cam8_nbe_tahrir_hash",
+      "ipAddress": "192.168.2.100",
+      "isActive": true,
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-24T12:00:00Z"
+    },
+    {
+      "camera_config_id": 9,
+      "branch_id": 14,
+      "username": "admin_nbe_nasr",
+      "password_hash": "$2b$10$cam9_nbe_nasr_hash",
+      "ipAddress": "192.168.2.101",
+      "isActive": true,
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-23T09:30:00Z"
+    },
+    {
+      "camera_config_id": 10,
+      "branch_id": 15,
+      "username": "admin_nbe_heliopolis",
+      "password_hash": "$2b$10$cam10_nbe_heliopolis_hash",
+      "ipAddress": "192.168.2.102",
+      "isActive": true,
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-22T14:15:00Z"
+    },
+    {
+      "camera_config_id": 11,
+      "branch_id": 16,
+      "username": "admin_nbe_maadi",
+      "password_hash": "$2b$10$cam11_nbe_maadi_hash",
+      "ipAddress": "192.168.2.103",
+      "isActive": true,
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-20T16:45:00Z"
+    },
+    {
+      "camera_config_id": 12,
+      "branch_id": 17,
+      "username": "admin_nbe_dokki",
+      "password_hash": "$2b$10$cam12_nbe_dokki_hash",
+      "ipAddress": "192.168.2.104",
+      "isActive": true,
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-25T11:30:00Z"
+    },
+    {
+      "camera_config_id": 13,
+      "branch_id": 19,
+      "username": "admin_nbe_smouha",
+      "password_hash": "$2b$10$cam13_nbe_smouha_hash",
+      "ipAddress": "192.168.2.105",
+      "isActive": true,
+      "created_at": "2026-01-06T10:00:00Z",
+      "updated_at": "2026-01-21T08:00:00Z"
+    },
+    {
+      "camera_config_id": 14,
+      "branch_id": 21,
+      "username": "admin_bm_dokki",
+      "password_hash": "$2b$10$cam14_bm_dokki_hash",
+      "ipAddress": "192.168.3.200",
+      "isActive": true,
+      "created_at": "2026-01-07T10:00:00Z",
+      "updated_at": "2026-01-24T13:20:00Z"
+    },
+    {
+      "camera_config_id": 15,
+      "branch_id": 22,
+      "username": "admin_bm_6oct",
+      "password_hash": "$2b$10$cam15_bm_6oct_hash",
+      "ipAddress": "192.168.3.201",
+      "isActive": true,
+      "created_at": "2026-01-07T10:00:00Z",
+      "updated_at": "2026-01-22T10:45:00Z"
+    },
+    {
+      "camera_config_id": 16,
+      "branch_id": 24,
+      "username": "admin_bm_tahrir",
+      "password_hash": "$2b$10$cam16_bm_tahrir_hash",
+      "ipAddress": "192.168.3.202",
+      "isActive": true,
+      "created_at": "2026-01-07T10:00:00Z",
+      "updated_at": "2026-01-25T15:10:00Z"
+    },
+    {
+      "camera_config_id": 17,
+      "branch_id": 25,
+      "username": "admin_bm_heliopolis",
+      "password_hash": "$2b$10$cam17_bm_heliopolis_hash",
+      "ipAddress": "192.168.3.203",
+      "isActive": true,
+      "created_at": "2026-01-07T10:00:00Z",
+      "updated_at": "2026-01-20T12:30:00Z"
+    },
+    {
+      "camera_config_id": 18,
+      "branch_id": 27,
+      "username": "admin_cib_smouha",
+      "password_hash": "$2b$10$cam18_cib_smouha_hash",
+      "ipAddress": "192.168.4.100",
+      "isActive": true,
+      "created_at": "2026-01-08T10:00:00Z",
+      "updated_at": "2026-01-23T14:00:00Z"
+    },
+    {
+      "camera_config_id": 19,
+      "branch_id": 28,
+      "username": "admin_cib_downtown",
+      "password_hash": "$2b$10$cam19_cib_downtown_hash",
+      "ipAddress": "192.168.4.101",
+      "isActive": true,
+      "created_at": "2026-01-08T10:00:00Z",
+      "updated_at": "2026-01-21T16:20:00Z"
+    },
+    {
+      "camera_config_id": 20,
+      "branch_id": 29,
+      "username": "admin_cib_tahrir",
+      "password_hash": "$2b$10$cam20_cib_tahrir_hash",
+      "ipAddress": "192.168.4.102",
+      "isActive": true,
+      "created_at": "2026-01-08T10:00:00Z",
+      "updated_at": "2026-01-24T09:45:00Z"
+    },
+    {
+      "camera_config_id": 21,
+      "branch_id": 30,
+      "username": "admin_cib_heliopolis",
+      "password_hash": "$2b$10$cam21_cib_heliopolis_hash",
+      "ipAddress": "192.168.4.103",
+      "isActive": true,
+      "created_at": "2026-01-08T10:00:00Z",
+      "updated_at": "2026-01-22T11:30:00Z"
+    },
+    {
+      "camera_config_id": 22,
+      "branch_id": 31,
+      "username": "admin_cib_dokki",
+      "password_hash": "$2b$10$cam22_cib_dokki_hash",
+      "ipAddress": "192.168.4.104",
+      "isActive": true,
+      "created_at": "2026-01-08T10:00:00Z",
+      "updated_at": "2026-01-25T13:00:00Z"
+    }
+  ],
   "cameraView": [
     {
       "camera_view_id": 1,
@@ -1738,8 +1960,8 @@
       "target_id": 1,
       "channel_number": 1,
       "isActive": true,
-      "stream_url": "rtsp://192.168.1.100:554/stream1",
-      "waitingPeopleCount": 3
+      "stream_url": "rtsp://192.168.1.10:554/stream1",
+      "waitingPeopleCount": 4
     },
     {
       "camera_view_id": 2,
@@ -1747,17 +1969,638 @@
       "target_id": 3,
       "channel_number": 2,
       "isActive": true,
-      "stream_url": "rtsp://192.168.1.100:554/stream2",
-      "waitingPeopleCount": 5
+      "stream_url": "rtsp://192.168.1.10:554/stream2",
+      "waitingPeopleCount": 7
     },
     {
       "camera_view_id": 3,
+      "camera_config_id": 1,
+      "target_id": 4,
+      "channel_number": 3,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.1.10:554/stream3",
+      "waitingPeopleCount": 3
+    },
+    {
+      "camera_view_id": 4,
       "camera_config_id": 2,
+      "target_id": 5,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.1.11:554/stream1",
+      "waitingPeopleCount": 5
+    },
+    {
+      "camera_view_id": 5,
+      "camera_config_id": 2,
+      "target_id": 3,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.1.11:554/stream2",
+      "waitingPeopleCount": 8
+    },
+    {
+      "camera_view_id": 6,
+      "camera_config_id": 2,
+      "target_id": 4,
+      "channel_number": 3,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.1.11:554/stream3",
+      "waitingPeopleCount": 2
+    },
+    {
+      "camera_view_id": 7,
+      "camera_config_id": 3,
+      "target_id": 5,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.1.12:554/stream1",
+      "waitingPeopleCount": 6
+    },
+    {
+      "camera_view_id": 8,
+      "camera_config_id": 3,
+      "target_id": 3,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.1.12:554/stream2",
+      "waitingPeopleCount": 9
+    },
+    {
+      "camera_view_id": 9,
+      "camera_config_id": 4,
+      "target_id": 4,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.1.13:554/stream1",
+      "waitingPeopleCount": 3
+    },
+    {
+      "camera_view_id": 10,
+      "camera_config_id": 4,
+      "target_id": 5,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.1.13:554/stream2",
+      "waitingPeopleCount": 4
+    },
+    {
+      "camera_view_id": 11,
+      "camera_config_id": 4,
+      "target_id": 3,
+      "channel_number": 3,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.1.13:554/stream3",
+      "waitingPeopleCount": 6
+    },
+    {
+      "camera_view_id": 12,
+      "camera_config_id": 5,
+      "target_id": 4,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.1.14:554/stream1",
+      "waitingPeopleCount": 5
+    },
+    {
+      "camera_view_id": 13,
+      "camera_config_id": 5,
+      "target_id": 3,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.1.14:554/stream2",
+      "waitingPeopleCount": 10
+    },
+    {
+      "camera_view_id": 14,
+      "camera_config_id": 6,
+      "target_id": 5,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.1.15:554/stream1",
+      "waitingPeopleCount": 7
+    },
+    {
+      "camera_view_id": 15,
+      "camera_config_id": 6,
+      "target_id": 3,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.1.15:554/stream2",
+      "waitingPeopleCount": 11
+    },
+    {
+      "camera_view_id": 16,
+      "camera_config_id": 6,
+      "target_id": 4,
+      "channel_number": 3,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.1.15:554/stream3",
+      "waitingPeopleCount": 4
+    },
+    {
+      "camera_view_id": 17,
+      "camera_config_id": 7,
+      "target_id": 5,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.1.16:554/stream1",
+      "waitingPeopleCount": 3
+    },
+    {
+      "camera_view_id": 18,
+      "camera_config_id": 7,
+      "target_id": 3,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.1.16:554/stream2",
+      "waitingPeopleCount": 5
+    },
+    {
+      "camera_view_id": 19,
+      "camera_config_id": 8,
       "target_id": 1,
       "channel_number": 1,
       "isActive": true,
-      "stream_url": "rtsp://192.168.1.101:554/stream1",
+      "stream_url": "rtsp://192.168.2.100:554/stream1",
+      "waitingPeopleCount": 3
+    },
+    {
+      "camera_view_id": 20,
+      "camera_config_id": 8,
+      "target_id": 2,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.100:554/stream2",
+      "waitingPeopleCount": 0
+    },
+    {
+      "camera_view_id": 21,
+      "camera_config_id": 8,
+      "target_id": 3,
+      "channel_number": 3,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.100:554/stream3",
+      "waitingPeopleCount": 5
+    },
+    {
+      "camera_view_id": 22,
+      "camera_config_id": 8,
+      "target_id": 4,
+      "channel_number": 4,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.100:554/stream4",
       "waitingPeopleCount": 2
+    },
+    {
+      "camera_view_id": 23,
+      "camera_config_id": 9,
+      "target_id": 1,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.101:554/stream1",
+      "waitingPeopleCount": 2
+    },
+    {
+      "camera_view_id": 24,
+      "camera_config_id": 9,
+      "target_id": 3,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.101:554/stream2",
+      "waitingPeopleCount": 4
+    },
+    {
+      "camera_view_id": 25,
+      "camera_config_id": 9,
+      "target_id": 4,
+      "channel_number": 3,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.101:554/stream3",
+      "waitingPeopleCount": 1
+    },
+    {
+      "camera_view_id": 26,
+      "camera_config_id": 10,
+      "target_id": 1,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.102:554/stream1",
+      "waitingPeopleCount": 4
+    },
+    {
+      "camera_view_id": 27,
+      "camera_config_id": 10,
+      "target_id": 2,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.102:554/stream2",
+      "waitingPeopleCount": 0
+    },
+    {
+      "camera_view_id": 28,
+      "camera_config_id": 10,
+      "target_id": 3,
+      "channel_number": 3,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.102:554/stream3",
+      "waitingPeopleCount": 6
+    },
+    {
+      "camera_view_id": 29,
+      "camera_config_id": 10,
+      "target_id": 5,
+      "channel_number": 4,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.102:554/stream4",
+      "waitingPeopleCount": 3
+    },
+    {
+      "camera_view_id": 30,
+      "camera_config_id": 11,
+      "target_id": 1,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.103:554/stream1",
+      "waitingPeopleCount": 3
+    },
+    {
+      "camera_view_id": 31,
+      "camera_config_id": 11,
+      "target_id": 3,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.103:554/stream2",
+      "waitingPeopleCount": 5
+    },
+    {
+      "camera_view_id": 32,
+      "camera_config_id": 12,
+      "target_id": 1,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.104:554/stream1",
+      "waitingPeopleCount": 5
+    },
+    {
+      "camera_view_id": 33,
+      "camera_config_id": 12,
+      "target_id": 2,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.104:554/stream2",
+      "waitingPeopleCount": 0
+    },
+    {
+      "camera_view_id": 34,
+      "camera_config_id": 12,
+      "target_id": 3,
+      "channel_number": 3,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.104:554/stream3",
+      "waitingPeopleCount": 7
+    },
+    {
+      "camera_view_id": 35,
+      "camera_config_id": 12,
+      "target_id": 4,
+      "channel_number": 4,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.104:554/stream4",
+      "waitingPeopleCount": 2
+    },
+    {
+      "camera_view_id": 36,
+      "camera_config_id": 12,
+      "target_id": 5,
+      "channel_number": 5,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.104:554/stream5",
+      "waitingPeopleCount": 4
+    },
+    {
+      "camera_view_id": 37,
+      "camera_config_id": 13,
+      "target_id": 1,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.105:554/stream1",
+      "waitingPeopleCount": 2
+    },
+    {
+      "camera_view_id": 38,
+      "camera_config_id": 13,
+      "target_id": 3,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.105:554/stream2",
+      "waitingPeopleCount": 3
+    },
+    {
+      "camera_view_id": 39,
+      "camera_config_id": 13,
+      "target_id": 4,
+      "channel_number": 3,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.2.105:554/stream3",
+      "waitingPeopleCount": 1
+    },
+    {
+      "camera_view_id": 40,
+      "camera_config_id": 14,
+      "target_id": 1,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.3.200:554/stream1",
+      "waitingPeopleCount": 4
+    },
+    {
+      "camera_view_id": 41,
+      "camera_config_id": 14,
+      "target_id": 2,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.3.200:554/stream2",
+      "waitingPeopleCount": 0
+    },
+    {
+      "camera_view_id": 42,
+      "camera_config_id": 14,
+      "target_id": 3,
+      "channel_number": 3,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.3.200:554/stream3",
+      "waitingPeopleCount": 6
+    },
+    {
+      "camera_view_id": 43,
+      "camera_config_id": 14,
+      "target_id": 5,
+      "channel_number": 4,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.3.200:554/stream4",
+      "waitingPeopleCount": 3
+    },
+    {
+      "camera_view_id": 44,
+      "camera_config_id": 15,
+      "target_id": 1,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.3.201:554/stream1",
+      "waitingPeopleCount": 3
+    },
+    {
+      "camera_view_id": 45,
+      "camera_config_id": 15,
+      "target_id": 3,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.3.201:554/stream2",
+      "waitingPeopleCount": 5
+    },
+    {
+      "camera_view_id": 46,
+      "camera_config_id": 15,
+      "target_id": 4,
+      "channel_number": 3,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.3.201:554/stream3",
+      "waitingPeopleCount": 2
+    },
+    {
+      "camera_view_id": 47,
+      "camera_config_id": 16,
+      "target_id": 1,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.3.202:554/stream1",
+      "waitingPeopleCount": 5
+    },
+    {
+      "camera_view_id": 48,
+      "camera_config_id": 16,
+      "target_id": 2,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.3.202:554/stream2",
+      "waitingPeopleCount": 0
+    },
+    {
+      "camera_view_id": 49,
+      "camera_config_id": 16,
+      "target_id": 3,
+      "channel_number": 3,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.3.202:554/stream3",
+      "waitingPeopleCount": 8
+    },
+    {
+      "camera_view_id": 50,
+      "camera_config_id": 16,
+      "target_id": 4,
+      "channel_number": 4,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.3.202:554/stream4",
+      "waitingPeopleCount": 3
+    },
+    {
+      "camera_view_id": 51,
+      "camera_config_id": 16,
+      "target_id": 5,
+      "channel_number": 5,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.3.202:554/stream5",
+      "waitingPeopleCount": 4
+    },
+    {
+      "camera_view_id": 52,
+      "camera_config_id": 17,
+      "target_id": 1,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.3.203:554/stream1",
+      "waitingPeopleCount": 2
+    },
+    {
+      "camera_view_id": 53,
+      "camera_config_id": 17,
+      "target_id": 3,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.3.203:554/stream2",
+      "waitingPeopleCount": 4
+    },
+    {
+      "camera_view_id": 54,
+      "camera_config_id": 18,
+      "target_id": 1,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.4.100:554/stream1",
+      "waitingPeopleCount": 3
+    },
+    {
+      "camera_view_id": 55,
+      "camera_config_id": 18,
+      "target_id": 2,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.4.100:554/stream2",
+      "waitingPeopleCount": 0
+    },
+    {
+      "camera_view_id": 56,
+      "camera_config_id": 18,
+      "target_id": 3,
+      "channel_number": 3,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.4.100:554/stream3",
+      "waitingPeopleCount": 5
+    },
+    {
+      "camera_view_id": 57,
+      "camera_config_id": 18,
+      "target_id": 5,
+      "channel_number": 4,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.4.100:554/stream4",
+      "waitingPeopleCount": 2
+    },
+    {
+      "camera_view_id": 58,
+      "camera_config_id": 19,
+      "target_id": 1,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.4.101:554/stream1",
+      "waitingPeopleCount": 4
+    },
+    {
+      "camera_view_id": 59,
+      "camera_config_id": 19,
+      "target_id": 3,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.4.101:554/stream2",
+      "waitingPeopleCount": 6
+    },
+    {
+      "camera_view_id": 60,
+      "camera_config_id": 19,
+      "target_id": 4,
+      "channel_number": 3,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.4.101:554/stream3",
+      "waitingPeopleCount": 2
+    },
+    {
+      "camera_view_id": 61,
+      "camera_config_id": 20,
+      "target_id": 1,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.4.102:554/stream1",
+      "waitingPeopleCount": 5
+    },
+    {
+      "camera_view_id": 62,
+      "camera_config_id": 20,
+      "target_id": 2,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.4.102:554/stream2",
+      "waitingPeopleCount": 0
+    },
+    {
+      "camera_view_id": 63,
+      "camera_config_id": 20,
+      "target_id": 3,
+      "channel_number": 3,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.4.102:554/stream3",
+      "waitingPeopleCount": 7
+    },
+    {
+      "camera_view_id": 64,
+      "camera_config_id": 20,
+      "target_id": 4,
+      "channel_number": 4,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.4.102:554/stream4",
+      "waitingPeopleCount": 3
+    },
+    {
+      "camera_view_id": 65,
+      "camera_config_id": 21,
+      "target_id": 1,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.4.103:554/stream1",
+      "waitingPeopleCount": 2
+    },
+    {
+      "camera_view_id": 66,
+      "camera_config_id": 21,
+      "target_id": 3,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.4.103:554/stream2",
+      "waitingPeopleCount": 4
+    },
+    {
+      "camera_view_id": 67,
+      "camera_config_id": 21,
+      "target_id": 5,
+      "channel_number": 3,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.4.103:554/stream3",
+      "waitingPeopleCount": 3
+    },
+    {
+      "camera_view_id": 68,
+      "camera_config_id": 22,
+      "target_id": 1,
+      "channel_number": 1,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.4.104:554/stream1",
+      "waitingPeopleCount": 4
+    },
+    {
+      "camera_view_id": 69,
+      "camera_config_id": 22,
+      "target_id": 2,
+      "channel_number": 2,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.4.104:554/stream2",
+      "waitingPeopleCount": 0
+    },
+    {
+      "camera_view_id": 70,
+      "camera_config_id": 22,
+      "target_id": 3,
+      "channel_number": 3,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.4.104:554/stream3",
+      "waitingPeopleCount": 6
+    },
+    {
+      "camera_view_id": 71,
+      "camera_config_id": 22,
+      "target_id": 4,
+      "channel_number": 4,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.4.104:554/stream4",
+      "waitingPeopleCount": 2
+    },
+    {
+      "camera_view_id": 72,
+      "camera_config_id": 22,
+      "target_id": 5,
+      "channel_number": 5,
+      "isActive": true,
+      "stream_url": "rtsp://192.168.4.104:554/stream5",
+      "waitingPeopleCount": 3
     }
   ],
   "logCategory": [
