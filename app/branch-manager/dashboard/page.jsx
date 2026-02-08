@@ -1,12 +1,14 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function BranchManagerDashboard() {
   const router = useRouter();
   const [language, setLanguage] = useState("en");
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    return JSON.parse(localStorage.getItem("isDark") ?? false);
+  });
   const [loading, setLoading] = useState(true);
   const [userData, setUserData] = useState(null);
   const [branchData, setBranchData] = useState(null);
@@ -561,7 +563,12 @@ export default function BranchManagerDashboard() {
             </button>
 
             <button
-              onClick={() => setDarkMode(!darkMode)}
+              onClick={() =>
+                setDarkMode((prev) => {
+                  localStorage.setItem("isDark", JSON.stringify(!prev));
+                  return !prev;
+                })
+              }
               className="px-4 py-2 rounded-xl font-bold transition-all hover:scale-105"
               style={{
                 background: "rgba(54, 226, 123, 0.15)",

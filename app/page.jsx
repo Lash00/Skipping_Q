@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // import Link from "next/link";
 import OrganizationSelector from "@/components/screens/OrganizationSelector/OrganizationSelector";
 import BranchSelector from "@/components/screens/BranchSelector/BranchSelector";
@@ -1689,7 +1689,7 @@ const mockBranches = {
     },
   ],
 };
-
+// Lash Lash gasseer
 const mockServices = [
   {
     service_id: 11,
@@ -1716,6 +1716,13 @@ export default function Home() {
   const [screen, setScreen] = useState("service-selector");
   const [language, setLanguage] = useState("en");
   const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const saved = localStorage.getItem("isDark");
+    if (saved !== null) {
+      setDarkMode(JSON.parse(saved));
+    }
+  }, []);
   const [selectedOrganization, setSelectedOrganization] = useState(null);
   const [selectedBankType, setSelectedBankType] = useState(null);
   const [selectedBranch, setSelectedBranch] = useState(null);
@@ -1726,6 +1733,22 @@ export default function Home() {
     latitude: 30.0444,
     longitude: 31.2357,
   });
+  // Lash Lash gasseer
+  // const [mockServices, setMockServices] = useState([]);
+  // const [loading, setLoading] = useState(true);
+
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const res = await fetch("http://10.215.67.77:5001/api/organizations");
+  //     const data = await res.json();
+  //     setMockServices(data.data);
+  //     console.log(data.data);
+  //     setLoading(false);
+  //   }
+
+  //   fetchData();
+  // }, []);
+
   const t = translations[language];
 
   const getOrgName = (org) =>
@@ -1871,7 +1894,12 @@ export default function Home() {
         <div className="hidden md:flex gap-3">
           {/* Dark Mode Toggle */}
           <button
-            onClick={() => setDarkMode(!darkMode)}
+            onClick={() =>
+              setDarkMode((prev) => {
+                localStorage.setItem("isDark", JSON.stringify(!prev));
+                return !prev;
+              })
+            }
             style={{
               backgroundColor: darkMode ? "#36e27b" : "#e8f4f8",
               color: darkMode ? "#111714" : "#36e27b",
@@ -1968,7 +1996,10 @@ export default function Home() {
           <div className="flex flex-col gap-3">
             <button
               onClick={() => {
-                setDarkMode(!darkMode);
+                setDarkMode((prev) => {
+                  localStorage.setItem("isDark", JSON.stringify(!prev));
+                  return !prev;
+                });
                 setMobileMenuOpen(false);
               }}
               style={{

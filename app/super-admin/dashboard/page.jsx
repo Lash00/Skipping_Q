@@ -6,7 +6,9 @@ import { useRouter } from "next/navigation";
 export default function OrganizationAdminDashboard() {
   const router = useRouter();
   const [language, setLanguage] = useState("en");
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    return JSON.parse(localStorage.getItem("isDark") ?? false);
+  });
   const [loading, setLoading] = useState(true);
   const [userData, setUserData] = useState(null);
   const [userOrganization, setUserOrganization] = useState(null);
@@ -821,7 +823,12 @@ Jane Smith,جين سميث,jane@example.com,password456,Alexandria,BR002`;
             </button>
 
             <button
-              onClick={() => setDarkMode(!darkMode)}
+              onClick={() =>
+                setDarkMode((prev) => {
+                  localStorage.setItem("isDark", JSON.stringify(!prev));
+                  return !prev;
+                })
+              }
               className="px-4 py-2 rounded-xl font-bold transition-all hover:scale-105"
               style={{
                 background: "rgba(54, 226, 123, 0.15)",

@@ -23,7 +23,13 @@ export default function ServiceTypeSelector({
       ? service.description_ar || "ابحث عن أقرب فرع في منطقتك"
       : service.description_en || "Find the nearest branch in your area";
   };
-
+  // services = services.filter((serv) => serv.id != 19);
+  let images = [
+    "/service_images/1.webp",
+    "/service_images/Civil_Registry.jpg",
+    "/service_images/Banks.webp",
+    "/service_images/4.webp",
+  ];
   return (
     <div className="max-w-6xl mx-auto">
       <TalkingCharacter />
@@ -49,9 +55,10 @@ export default function ServiceTypeSelector({
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6"
         id="go_to_servieces"
       >
-        {services.map((service) => (
+        {services.map((service, i) => (
           <button
-            key={service.service_id}
+            // key={service.service_id}
+            key={service.org_id}
             onClick={() => onSelectService(service)}
             className={`${language === "ar" ? "text-right" : "text-left"} transition hover:scale-105 hover:shadow-xl`}
             style={{
@@ -74,6 +81,8 @@ export default function ServiceTypeSelector({
               >
                 <img
                   src={service.org_image}
+                  // Lash Lash gasseer
+                  // src={images.at(i)}
                   alt={getServiceName(service)}
                   style={{
                     width: "100%",
@@ -93,11 +102,15 @@ export default function ServiceTypeSelector({
                 className="text-2xl font-bold mb-2"
               >
                 {getServiceName(service)}
+                {/* // Lash Lash gasseer  */}
+                {/* {service.org_name} */}
               </h3>
 
               {/* Service Description */}
               <p style={{ color: "#555756" }} className="text-sm mb-3 ">
                 {getServiceDescription(service)}
+                {/* // Lash Lash gasseer  */}
+                {/* {service.org_description} */}
               </p>
 
               {/* Action Button */}

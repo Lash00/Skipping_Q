@@ -18,7 +18,9 @@ export default function SignupOrganization() {
     governorate: "",
     org_picture: null,
   });
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    return JSON.parse(localStorage.getItem("isDark") ?? false);
+  });
   const [isFocused, setIsFocused] = useState({});
   const [previewImage, setPreviewImage] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -194,7 +196,12 @@ export default function SignupOrganization() {
 
       {/* Dark Mode Toggle - Fixed Position */}
       <button
-        onClick={() => setDarkMode(!darkMode)}
+        onClick={() =>
+          setDarkMode((prev) => {
+            localStorage.setItem("isDark", JSON.stringify(!prev));
+            return !prev;
+          })
+        }
         className="fixed top-8 right-8 p-4 rounded-2xl font-bold transition-all duration-300 hover:scale-110 shadow-2xl backdrop-blur-md z-50"
         style={{
           backgroundColor: darkMode
